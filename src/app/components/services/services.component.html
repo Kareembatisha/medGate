@@ -1,0 +1,55 @@
+<!-- services.component.html -->
+<section class="services-section">
+  <div class="container">
+    <div class="header">
+      <h2>Our Services</h2>
+      <p>Comprehensive solutions that cover all your needs</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services">
+        <div class="card-inner">
+          <!-- Front of the card -->
+          <div class="card-front">
+            <div class="card-content">
+              <div class="icon-container">
+                <!-- <fa-icon [icon]="service.icon" size="2x"></fa-icon> -->
+              </div>
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.description }}</p>
+              <a href="#" class="read-more">
+                Read more
+                <span class="arrow-icon">
+                  <!-- <fa-icon [icon]="faChevronLeft"></fa-icon> -->
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Back of the card (flipped content) -->
+          <div class="card-back">
+            <div class="geometric-shapes"></div>
+            <div class="card-content">
+              <p class="flip-description">{{ service.flipDescription }}</p>
+              <a href="#" class="read-more flip">
+                Read more
+                <span class="arrow-icon">
+                  <!-- <fa-icon [icon]="faChevronLeft"></fa-icon> -->
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-services-btn">
+      <button class="btn-primary">
+        View services
+        <span class="arrow-icon">
+          <!-- <fa-icon [icon]="faChevronLeft"></fa-icon> -->
+        </span>
+      </button>
+    </div>
+  </div>
+</section>

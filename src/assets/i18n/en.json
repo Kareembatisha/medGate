@@ -1,0 +1,16 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "SOLUTIONS": "Solutions",
+    "ABOUT": "About",
+    "FAQS": "FAQs",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "HEADING": "MedGate your Gateway to medical device registration and marketing in Saudi Arabia",
+    "TEXT": "We help manufacturers and distributors access the Saudi market with confidence, speed, and full compliance with SFDA requirements.",
+    "BUTTON": "Start Now",
+    "IMAGE_ALT": "Medical device registration illustration"
+  }
+}
