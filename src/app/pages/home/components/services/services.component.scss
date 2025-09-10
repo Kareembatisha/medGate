@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background: rgba(241, 241, 241, 0.2);
-  padding: 64px 20px;
+  padding: 113px 69px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +62,13 @@
   .service-card {
     perspective: 1000px;
     height: 312px;
+    // Fix: Ensure the card container handles hover properly
+    cursor: pointer;
+
+    // Fix: Move hover to the service-card level instead of card-inner
+    &:hover .card-inner {
+      transform: rotateY(180deg);
+    }
 
     .card-inner {
       position: relative;
@@ -71,10 +78,13 @@
       transform-style: preserve-3d;
       box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
+      // Fix: Ensure no pointer events interfere
+      pointer-events: none;
 
-      &:hover {
-        transform: rotateY(180deg);
-      }
+      // Remove the original hover effect from here
+      // &:hover {
+      //   transform: rotateY(180deg);
+      // }
     }
 
     .card-front,
@@ -85,6 +95,8 @@
       backface-visibility: hidden;
       border-radius: 15px;
       overflow: hidden;
+      // Fix: Re-enable pointer events on the cards themselves
+      pointer-events: auto;
     }
 
     .card-front {
@@ -96,10 +108,30 @@
         padding: 40px 30px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: 100%;
+        text-align: center;
+        // Fix: Prevent text selection that might interfere with hover
+        user-select: none;
 
         @media (max-width: 480px) {
           padding: 25px 20px;
+        }
+
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 15px;
+          transition: transform 0.3s;
+
+          img {
+            width: 100px;
+            height: 100px;
+            // Fix: Prevent image drag that might interfere with hover
+            pointer-events: none;
+            user-select: none;
+          }
         }
 
         h3 {
@@ -108,7 +140,9 @@
           font-size: 20px;
           line-height: 28px;
           color: #00407e;
-          margin-bottom: 15px;
+          margin: 0 0 10px 0;
+          // Fix: Prevent text selection
+          user-select: none;
 
           @media (max-width: 480px) {
             font-size: 18px;
@@ -124,6 +158,8 @@
           color: #323232;
           flex-grow: 1;
           margin-bottom: auto;
+          // Fix: Prevent text selection
+          user-select: none;
 
           @media (max-width: 480px) {
             font-size: 14px;
@@ -140,6 +176,8 @@
           color: #00af17;
           text-decoration: none;
           margin-top: 20px;
+          // Fix: Ensure read-more links are clickable
+          pointer-events: auto;
 
           .arrow-icon {
             margin-left: 8px;
@@ -162,7 +200,6 @@
       justify-content: center;
       align-items: center;
       position: relative;
-
       background-image: url("/assets/flip-card.png");
       background-size: cover;
       background-position: center;
@@ -174,6 +211,23 @@
         padding: 40px 30px;
         text-align: center;
         color: #fff;
+        max-height: 100%;
+        overflow-y: auto;
+        // Fix: Prevent text selection on back card too
+        user-select: none;
+
+        /* Scrollbar styling */
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+        &::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 3px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: rgba(255, 255, 255, 0.4);
+          border-radius: 3px;
+        }
 
         .flip-description {
           font-family: "Inter", sans-serif;
@@ -192,6 +246,8 @@
           font-size: 14px;
           color: #00f020;
           text-decoration: none;
+          // Fix: Ensure read-more links are clickable on back too
+          pointer-events: auto;
 
           .arrow-icon {
             margin-left: 8px;
@@ -215,6 +271,7 @@
     .btn-primary {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       padding: 12px 24px;
       gap: 8px;
       background: #024088;
@@ -227,6 +284,10 @@
 
       .arrow-icon {
         transform: rotate(-180deg);
+      }
+
+      &:hover {
+        opacity: 0.9;
       }
     }
   }

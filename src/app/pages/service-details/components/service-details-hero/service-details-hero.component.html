@@ -1,0 +1,22 @@
+<section class="service-hero">
+  <div class="container">
+    <div class="hero-content">
+      <!-- Left Text Content -->
+      <div class="text-content">
+        <h1 class="heading">{{ title | translate }}</h1>
+        <p class="description">{{ description | translate }}</p>
+
+        <div class="actions" *ngIf="showButton">
+          <button class="cta-button">{{ "GET_STARTED.BUTTON" | translate }}</button>
+        </div>
+      </div>
+
+      <!-- Right Image Content -->
+      <div class="image-content" *ngIf="imageUrl">
+        <div class="image-container">
+          <img [src]="imageUrl" [alt]="imageAlt | translate" class="hero-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

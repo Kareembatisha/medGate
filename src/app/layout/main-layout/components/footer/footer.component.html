@@ -1,0 +1,115 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <!-- Left Section: Logo and Contact Info -->
+      <div class="footer-left">
+        <div class="logo">
+          <img
+            src="assets/medGatelogo.PNG"
+            alt="IA MEOGATE Logo"
+            class="logo-img"
+          />
+        </div>
+        <div class="contact-info">
+          <h4>{{ "FOOTER.ADDRESS" | translate }}</h4>
+          <p>{{ "FOOTER.ADDRESS_DETAILS" | translate }}</p>
+          <p>{{ "FOOTER.PHONE" | translate }}</p>
+          <p>{{ "FOOTER.EMAIL" | translate }}</p>
+        </div>
+      </div>
+
+      <!-- Center Section: Links -->
+      <div class="footer-center">
+        <div class="links-column">
+          <h4>{{ "FOOTER.HOME.TITLE" | translate }}</h4>
+          <ul>
+            <li>
+              <a href="#">{{ "FOOTER.HOME.LINK1" | translate }}</a>
+            </li>
+            <li>
+              <a href="#">{{ "FOOTER.HOME.LINK2" | translate }}</a>
+            </li>
+            <li>
+              <a href="#">{{ "FOOTER.HOME.LINK3" | translate }}</a>
+            </li>
+            <li>
+              <a href="#">{{ "FOOTER.HOME.LINK4" | translate }}</a>
+            </li>
+            <li>
+              <a href="#">{{ "FOOTER.HOME.LINK5" | translate }}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="links-column">
+          <h4>{{ "FOOTER.ABOUT.TITLE" | translate }}</h4>
+          <ul>
+            <li>
+              <a href="#">{{ "FOOTER.ABOUT.LINK1" | translate }}</a>
+            </li>
+            <li>
+              <a href="#">{{ "FOOTER.ABOUT.LINK2" | translate }}</a>
+            </li>
+            <li>
+              <a href="#">{{ "FOOTER.ABOUT.LINK3" | translate }}</a>
+            </li>
+            <li>
+              <a href="#">{{ "FOOTER.ABOUT.LINK4" | translate }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Section: Email Subscription -->
+      <div class="footer-right">
+        <div class="subscription">
+          <h4>{{ "FOOTER.SUBSCRIBE.TITLE" | translate }}</h4>
+          <div class="subscription-form">
+            <input
+              type="email"
+              pInputText
+              [placeholder]="'FOOTER.SUBSCRIBE.PLACEHOLDER' | translate"
+              [(ngModel)]="email"
+              class="email-input"
+            />
+            <button type="button" class="btn btn-primary" (click)="subscribe()">
+              {{ "FOOTER.SUBSCRIBE.BUTTON" | translate }}
+            </button>
+          </div>
+          <p class="subscription-note">
+            {{ "FOOTER.SUBSCRIBE.NOTE" | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Copyright -->
+    <div class="footer-bottom">
+      <div class="divider"></div>
+      <div class="bottom-content">
+        <div class="copyright">
+          <span>{{ "FOOTER.COPYRIGHT" | translate }}</span>
+          <div class="legal-links">
+            <a href="#">{{ "FOOTER.LEGAL.PRIVACY" | translate }}</a>
+            <a href="#">{{ "FOOTER.LEGAL.TERMS" | translate }}</a>
+            <a href="#">{{ "FOOTER.LEGAL.COOKIES" | translate }}</a>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href="#" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

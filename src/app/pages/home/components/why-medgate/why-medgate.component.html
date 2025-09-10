@@ -1,0 +1,28 @@
+<section class="why-medgate-section">
+  <div class="container">
+    <div class="header-section">
+      <h2 class="section-title">
+        <span class="text-main">{{ 'WHY_MEDGATE.WHY' | translate }}</span>
+        <span class="text-second">{{ 'WHY_MEDGATE.MEDGATE' | translate }}</span>
+      </h2>
+      <div class="title-underline"></div>
+      <p class="section-subtitle">
+        {{ 'WHY_MEDGATE.SUBTITLE' | translate }}
+      </p>
+    </div>
+
+    <div class="cards-container">
+      <div class="card-row">
+        <div *ngFor="let card of cards" class="feature-card">
+          <div class="card-content">
+            <div class="card-image">
+              <img [src]="card.image" [alt]="card.title | translate" />
+            </div>
+            <h3 class="card-title">{{ card.title | translate }}</h3>
+            <p class="card-description">{{ card.description | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -474,3 +474,10 @@
     }
   }
 }
+
+.nav-link.active,
+.mobile-nav-link.active {
+  color: #0074e4; // highlight color
+  font-weight: 600;
+  border-bottom: 2px solid #0074e4; // optional underline
+}

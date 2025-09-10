@@ -10,7 +10,12 @@
       <nav class="desktop-nav" *ngIf="!isMobileView">
         <ul class="nav-list">
           <li class="nav-item" *ngFor="let item of navItems">
-            <a [routerLink]="item.link" class="nav-link">
+            <a 
+              [routerLink]="item.link" 
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: item.link === '/' }"
+              class="nav-link"
+            >
               {{ item.labelKey | translate }}
             </a>
           </li>
@@ -78,10 +83,13 @@
         <li class="mobile-nav-item" *ngFor="let item of navItems">
           <a
             [routerLink]="item.link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: item.link === '/' }"
             class="mobile-nav-link"
             (click)="closeMenu()"
-            >{{ item.labelKey | translate }}</a
           >
+            {{ item.labelKey | translate }}
+          </a>
         </li>
         <li class="mobile-nav-item">
           <button class="mobile-contact-btn">

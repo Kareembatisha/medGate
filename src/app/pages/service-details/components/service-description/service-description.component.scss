@@ -1,0 +1,221 @@
+.service-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 64px;
+  width: 100%;
+  background: rgba(202, 202, 202, 0.03);
+  position: relative;
+
+  .container {
+    width: 1380px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+
+    .title {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 76px;
+      text-align: center;
+      color: #00407e;
+      margin: 0 0 10px 0;
+      width: 100%;
+    }
+
+    .sub-title {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: #00af17;
+      width: 100%;
+    }
+
+    .description {
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: #090909;
+      margin: 0;
+      margin-top: -10px;
+      max-width: 100%;
+    }
+
+    .cta-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 20px;
+      width: 132px;
+      height: 48px;
+      background: #00407e;
+      border: 1px solid #486284;
+      border-radius: 50px;
+      cursor: pointer;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #00305a;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+/* RTL Support - Fixed selectors */
+.service-description[dir="rtl"] .content-wrapper {
+  align-items: flex-end;
+}
+
+.service-description[dir="rtl"] .sub-title {
+  text-align: right;
+}
+
+.service-description[dir="rtl"] .description {
+  text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+  .service-description {
+    padding: 60px 40px;
+
+    .content-wrapper {
+      .title {
+        font-size: 36px;
+        line-height: 60px;
+      }
+
+      .description {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .service-description {
+    padding: 50px 30px;
+
+    .content-wrapper {
+      .title {
+        font-size: 32px;
+        line-height: 50px;
+      }
+
+      .sub-title {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      .description {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .cta-button {
+        width: 130px;
+        height: 46px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service-description {
+    padding: 40px 20px;
+
+    .content-wrapper {
+      align-items: center;
+      gap: 20px;
+
+      .title {
+        font-size: 28px;
+        line-height: 40px;
+      }
+
+      .sub-title,
+      .description {
+        text-align: center;
+      }
+
+      .cta-button {
+        width: 120px;
+        height: 44px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  /* RTL support for mobile */
+  .service-description[dir="rtl"] {
+    .content-wrapper {
+      .sub-title,
+      .description {
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .service-description {
+    padding: 30px 15px;
+
+    .content-wrapper {
+      gap: 16px;
+
+      .title {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      .sub-title,
+      .description {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      .cta-button {
+        width: 110px;
+        height: 40px;
+        font-size: 14px;
+        padding: 10px 16px;
+      }
+    }
+  }
+
+  /* RTL support for small mobile */
+  [dir="rtl"] {
+    .service-description {
+      .content-wrapper {
+        .sub-title,
+        .description {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

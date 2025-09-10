@@ -1,0 +1,46 @@
+<section class="services-section" [dir]="direction">
+  <div class="container">
+    <div class="header">
+      <h2>{{ "SERVICES.OUR_SERVICES" | translate }}</h2>
+      <p>{{ "SERVICES.COMPREHENSIVE_SOLUTIONS" | translate }}</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of displayedServices">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-content">
+              <div class="icon-container">
+                <img [src]="service.icon" alt="icon" width="40" height="40" />
+              </div>
+              <h3>{{ service.title | translate }}</h3>
+            </div>
+          </div>
+
+          <div class="card-back">
+            <div class="geometric-shapes"></div>
+            <div class="card-content">
+              <p class="flip-description">
+                {{ service.flipDescription | translate }}
+              </p>
+              <a
+                [routerLink]="['/services', service.id]"
+                class="read-more flip"
+              >
+                {{ "COMMON.READ_MORE" | translate }}
+                <span class="arrow-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-services-btn" *ngIf="showViewButton">
+      <button class="btn-primary" [routerLink]="['/services']">
+        {{ viewButtonText | translate }}
+        <span class="arrow-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>

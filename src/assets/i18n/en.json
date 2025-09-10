@@ -12,5 +12,100 @@
     "TEXT": "We help manufacturers and distributors access the Saudi market with confidence, speed, and full compliance with SFDA requirements.",
     "BUTTON": "Start Now",
     "IMAGE_ALT": "Medical device registration illustration"
+  },
+  "FOOTER": {
+    "ADDRESS": "Address:",
+    "ADDRESS_DETAILS": "Level 1, 12 Sample St, Sydney NSW 2000",
+    "PHONE": "1800 123 4567",
+    "EMAIL": "info@telume.io",
+
+    "HOME": {
+      "TITLE": "Home",
+      "LINK1": "Home",
+      "LINK2": "Our services",
+      "LINK3": "Why MedGate",
+      "LINK4": "Contact Us",
+      "LINK5": "CAT"
+    },
+
+    "ABOUT": {
+      "TITLE": "About Us",
+      "LINK1": "Services",
+      "LINK2": "Solutions",
+      "LINK3": "About Us",
+      "LINK4": "FAQs"
+    },
+
+    "SUBSCRIBE": {
+      "TITLE": "Enter your email",
+      "PLACEHOLDER": "Email address",
+      "BUTTON": "Subscribe",
+      "NOTE": "By subscribing you agree to with our Privacy Policy"
+    },
+
+    "COPYRIGHT": "© 2025 MedGate. All rights reserved.",
+    "LEGAL": {
+      "PRIVACY": "Privacy Policy",
+      "TERMS": "Terms of Service",
+      "COOKIES": "Cookies Settings"
+    }
+  },
+  "WHY_MEDGATE": {
+    "WHY": "Why",
+    "MEDGATE": "MedGate?",
+    "SUBTITLE": "We empower medical device companies to confidently enter and grow in the Saudi market with expert guidance and regulatory compliance.",
+    "CARD_1_TITLE": "Specialists in Saudi and international regulations.",
+    "CARD_1_DESC": "We combine our local expertise with full to SFDA regulations, helping you make your devices aligned with both SFDA and international standards.",
+    "CARD_2_TITLE": "Fast, tailored solutions for every product",
+    "CARD_2_DESC": "Whether you're launching a simple device or a high-risk system, we provide customized strategies to save you time and resources.",
+    "CARD_3_TITLE": "Bilingual support Arabic / English",
+    "CARD_3_DESC": "Clear communication in both languages ensures nothing gets lost in translation, from documentation to regulatory submissions.",
+    "CARD_4_TITLE": "Ongoing support from approval to post-market.",
+    "CARD_4_DESC": "We don't stop at approvals; we stay with you to manage renewals, compliance, and reporting after your product hits the market."
+  },
+  "DISCOVER_MEDGATE": {
+    "TITLE": "Discover MedGate",
+    "DESCRIPTION": "Watch how MedGate helps medical device companies navigate SFDA requirements, achieve fast approvals, and bring innovations safely to the Saudi market.",
+    "REGISTER_BTN": "Register Now"
+  },
+  "GET_STARTED": {
+    "TITLE": "Get Started Today",
+    "DESCRIPTION": "Begin your medical device registration journey with MedGate and unlock the Saudi market faster, safer, and with full compliance.",
+    "BUTTON": "Register Now"
+  },
+  "SERVICE_HERO": {
+    "HEADING": "Experience Seamless Regulatory Services",
+    "SUBTITLE": "Your Gateway to the Saudi Healthcare Market",
+    "DESCRIPTION": "Medgate serves as your entry point to the Saudi healthcare market, leveraging extensive expertise to provide a wide range of solutions for medical device and IVD manufacturers. Our mission is to facilitate smooth and efficient market entry while ensuring compliance with local regulations and international standards.",
+    "START_NOW": "Start Now",
+    "IMAGE_ALT": "Service Hero Image"
+  },
+  "SERVICES": {
+    "SERVICE_DETAILS": "Service Details",
+    "OUR_SERVICES": "Our Services",
+    "COMPREHENSIVE_SOLUTIONS": "Comprehensive solutions that cover all your needs",
+    "VIEW_SERVICES": "View services",
+    "MEDICAL_DEVICE_MARKETING_AUTH": "Medical Device Marketing Authorization (MDMA)",
+    "UNIQUE_DEVICE_IDENTIFICATION": "Unique Device Identification (UDI)",
+    "NCMDR": "National Center for Medical Devices Reporting (NCMDR)",
+    "IMPORTATION_DISTRIBUTION": "Importation & Distribution License",
+    "AUTHORIZED_REPRESENTATIVE": "Authorized Representative (AR) Licensing",
+    "PRODUCT_CLASSIFICATION_SYSTEM": "Product Classification System (PCS)",
+    "CLASSIFICATION_DESCRIPTION": "Classification of medical devices to accurately determine registration requirements",
+    "MEDICAL_DEVICE_MARKETING_AUTH_DESC": "Obtain the official SFDA authorization to market your medical devices and IVDs in Saudi Arabia. Our team assists with preparing a robust technical file, submitting via the GHAD portal, and navigating review stages including risk assessment, regulatory compliance, and clinical documentation—ensuring your product launches smoothly and efficiently",
+    "UNIQUE_DEVICE_IDENTIFICATION_DESC": "Establish traceability and enhance patient safety by implementing a compliant UDI system. We help you generate globally standardized device codes, integrate them into the SFDA's tracking infrastructure, and ensure seamless visibility across the supply chain and post-market surveillance",
+    "NCMDR_DESC": "Maintain regulatory compliance with thorough post-market monitoring via NCMDR. We support incident reporting, adverse event escalation, and recall coordination, working directly with the SFDA and healthcare stakeholders to ensure rapid resolution, accurate documentation, and sustained product safety",
+    "IMPORTATION_DISTRIBUTION_DESC": "Secure the legal permits required to import and distribute medical devices in Saudi Arabia. MedGate assists you in preparing import dossiers, managing customs clearance, and meeting SFDA requirements—enabling smooth market access through swift and compliant logistics",
+    "AUTHORIZED_REPRESENTATIVE_DESC": "Appoint MedGate as your official regulatory representative in Saudi Arabia. We manage documentation, authentication, and Saudi embassy endorsements as needed, ensuring full pre- and post-market compliance. With our AR license, your business gains legal visibility, regulatory credibility, and hassle-free communication with the SFDA",
+    "PRODUCT_CLASSIFICATION_SYSTEM_DESC": "Clarify your regulatory path with accurate product classification. Based on Saudi FDA criteria, we evaluate your device's risk class, invasiveness, and intended use to determine the exact approval requirements—streamlining your registration strategy and avoiding costly misclassification",
+    "MEDICAL_DEVICE_MARKETING_AUTH_LONG_DESC": "is the official approval issued by the Saudi Food and Drug Authority (SFDA) that allows companies to market and sell their medical devices and in-vitro diagnostics (IVDs) in Saudi Arabia. Obtaining MDMA involves a structured regulatory process that ensures your product complies with both national and international safety, performance, and quality standards. At MedGate, we provide end-to-end support throughout this journey: preparing the required technical documentation, compiling risk management and clinical evaluation reports, and submitting complete dossiers through the SFDA’s GHAD portal. Our experts liaise with regulators, address queries, and monitor review progress on your behalf. This minimizes delays, reduces compliance risks, and accelerates time-to-market—enabling you to confidently introduce your products to the Saudi healthcare sector",
+    "UNIQUE_DEVICE_IDENTIFICATION_LONG_DESC": "system is a cornerstone of medical device traceability and patient safety. Each device is assigned a globally recognized code that allows regulators, healthcare providers, and supply chain stakeholders to identify key information about the product at every stage of its lifecycle. This improves device tracking, enhances recall efficiency, and provides transparency for both patients and healthcare professionals. MedGate assists companies in aligning their UDI systems with SFDA requirements by generating compliant device identifiers, integrating them into labels and packaging, and registering them in the relevant national databases. Our team ensures full harmonization with international standards such as GS1, HIBCC, or ICCBBA, while meeting the specific regulatory requirements of the Saudi market. This service not only strengthens compliance but also fosters trust with healthcare providers and end users",
+    "NCMDR_LONG_DESC": "is a post-market surveillance platform established by the SFDA to enhance patient safety and monitor device performance in real-world settings. Manufacturers, importers, and healthcare facilities are required to report adverse events, product complaints, and field safety corrective actions through this system. MedGate provides comprehensive support for all your NCMDR obligations. We help you establish effective reporting systems, draft and submit incident reports, and manage communication with regulators. In addition, we offer consultancy for root-cause analysis, corrective and preventive actions (CAPA), and recall management. By ensuring timely and accurate reporting, MedGate helps you maintain compliance, protect your company’s reputation, and safeguard patient health in the Saudi market",
+    "IMPORTATION_DISTRIBUTION_LONG_DESC": "Before medical devices can be placed on the Saudi market, companies must obtain an Importation & Distribution License from the SFDA. This license legally authorizes businesses to bring devices into the country and distribute them to healthcare providers. Without it, companies face regulatory restrictions, shipment delays, and potential penalties. MedGate simplifies this complex licensing process. We assist with preparing and submitting the required application documents, including business registration, facility compliance, and quality management certifications. Our team also provides guidance on customs clearance procedures and ensures that your importation and distribution practices remain fully compliant with SFDA standards. With MedGate, you gain a reliable partner that enables smooth market entry, minimizes regulatory hurdles, and ensures a steady flow of devices to healthcare institutions",
+    "AUTHORIZED_REPRESENTATIVE_LONG_DESC": "Foreign manufacturers who wish to market medical devices in Saudi Arabia are required by law to appoint a local Authorized Representative (AR). The AR serves as the official liaison between the manufacturer and the SFDA, assuming responsibility for pre- and post-market regulatory compliance, incident reporting, and communication with health authorities. As your Authorized Representative, MedGate ensures that your devices meet all SFDA regulatory obligations without requiring your physical presence in the Kingdom. We manage documentation, handle registration processes, authenticate legal agreements, and oversee communication with regulators. In addition, we assist with post-market monitoring, vigilance reporting, and recall management if needed. With MedGate as your trusted AR, you can confidently expand into the Saudi market, knowing that your compliance and regulatory responsibilities are in expert hands",
+    "PRODUCT_CLASSIFICATION_SYSTEM_LONG_DESC": "is a critical first step in determining the regulatory requirements for medical device registration. Devices are classified into different risk categories based on their intended use, invasiveness, duration of contact with the human body, and overall safety profile. A correct classification ensures that the appropriate approval pathway is followed, while misclassification can lead to costly delays or regulatory rejections. At MedGate, we help manufacturers and distributors accurately classify their medical devices in line with SFDA regulations. Our experts assess product specifications, compare them with international benchmarks, and provide a detailed classification strategy that clarifies all necessary submission requirements. By guiding you through PCS, we enable a smoother and faster registration process, reduce compliance risks, and ensure that your device is positioned correctly in the Saudi healthcare market"
+  },
+  "COMMON": {
+    "READ_MORE": "Read more"
   }
 }

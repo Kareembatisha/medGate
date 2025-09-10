@@ -1,0 +1,27 @@
+<div class="partners-container">
+  <div
+    class="partners-marquee"
+    (mouseenter)="pauseAnimation()"
+    (mouseleave)="resumeAnimation()"
+  >
+    <div
+      class="marquee-track"
+      [style.animation-duration]="animationDuration + 's'"
+      [style.animation-play-state]="animationState"
+    >
+      <div
+        class="partner-logo"
+        *ngFor="let partner of partners; let i = index"
+      >
+        <img [src]="partner.image" [alt]="partner.name" />
+      </div>
+      <!-- Duplicate for seamless looping -->
+      <div
+        class="partner-logo"
+        *ngFor="let partner of partners; let i = index"
+      >
+        <img [src]="partner.image" [alt]="partner.name" />
+      </div>
+    </div>
+  </div>
+</div>

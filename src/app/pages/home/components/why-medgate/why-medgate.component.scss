@@ -1,0 +1,274 @@
+// why-medgate.component.scss
+
+.why-medgate-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 72px 0;
+  gap: 80px;
+  background: #ffffff;
+  width: 100%;
+
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+
+    .header-section {
+      text-align: center;
+      margin-bottom: 140px;
+
+      .section-title {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+
+      .title-underline {
+        width: 115px;
+        height: 0;
+        border: 3px solid #004080;
+        margin: 0 auto 30px;
+      }
+
+      .section-subtitle {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #323232;
+        max-width: 854px;
+        margin: 0 auto;
+      }
+    }
+
+    .cards-container {
+      .card-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // Add margin top to accommodate protruding images
+        margin-top: 60px;
+
+        .feature-card {
+          width: 330px;
+          margin-bottom: 60px; // Increased to accommodate protruding image
+          background: #ffffff;
+          box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.1);
+          border-radius: 25px;
+          border: none;
+          position: relative; // Required for absolute positioning of image
+          overflow: visible; // Allow image to extend outside card
+
+          ::ng-deep .p-card-body {
+            padding: 0;
+          }
+
+          ::ng-deep .p-card-content {
+            padding: 0;
+          }
+
+          .card-content {
+            padding: 80px 35px 30px; // Reduced bottom padding, increased top for image space
+            position: relative;
+
+            .card-image {
+              height: 220px; // Reduced height
+              width: 220px; // Set fixed width
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              top: -120px; // Position 50% outside the card (60px out of 120px height)
+              left: 50%;
+              background: #ffffff;
+              margin: 0 auto;
+              margin-top: -140px;
+              img {
+                max-height: 100%; // Reduced image size
+                max-width: 100%;
+                object-fit: contain;
+              }
+            }
+
+            .card-title {
+              font-family: "Inter", sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 32px;
+              text-align: center;
+              color: #000000;
+              margin-bottom: 16px;
+              margin-top: 20px; // Add space for the floating image
+            }
+
+            .card-description {
+              font-family: "Inter", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 28px;
+              letter-spacing: 0.01em;
+              color: #323232;
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media screen and (max-width: 1200px) {
+  .why-medgate-section {
+    .container {
+      .cards-container {
+        .card-row {
+          justify-content: center !important;
+          gap: 30px;
+
+          .feature-card {
+            width: calc(50% - 15px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .why-medgate-section {
+    padding: 40px 0;
+    gap: 40px;
+
+    .container {
+      .header-section {
+        margin-bottom: 40px;
+
+        .section-title {
+          font-size: 28px;
+        }
+
+        .section-subtitle {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 78px;
+        }
+      }
+
+      .cards-container {
+        .card-row {
+          margin-top: 40px; // Reduced for mobile
+
+          .feature-card {
+            width: 100%;
+            margin-bottom: 50px;
+
+            .card-content {
+              padding: 70px 30px 25px; // Adjusted for mobile
+
+              .card-image {
+                height: 100px;
+                width: 100px;
+                top: -50px;
+
+                img {
+                  max-height: 70px;
+                  max-width: 70px;
+                }
+              }
+
+              .card-title {
+                font-size: 16px;
+                margin-top: 15px;
+              }
+
+              .card-description {
+                font-size: 13px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+
+  .section-title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+
+    .text-main {
+      color: #000000; // black
+    }
+
+    .text-second {
+      color: #004080; // black
+    }
+  }
+
+  .title-underline {
+    width: 115px;
+    height: 0;
+    border: 3px solid #004080;
+    border-radius: 5px;
+    margin: 0 auto 30px;
+  }
+
+  .section-subtitle {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #323232;
+    max-width: 854px;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .header-section {
+    margin-bottom: 40px;
+
+    .section-title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    .title-underline {
+      width: 80px;
+      border-width: 2px;
+      margin-top: 15px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
