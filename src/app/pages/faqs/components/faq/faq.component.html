@@ -1,0 +1,31 @@
+<div class="faq-container">
+  <div class="faq-list">
+    <div *ngFor="let faq of faqs" class="faq-item" [class.active]="faq.isOpen">
+      <div class="faq-question" (click)="toggleFaq(faq)">
+        <span class="question-text">{{ faq.question | translate }}</span>
+        <div class="toggle-icon">
+          <i *ngIf="!faq.isOpen" class="fas fa-plus light-icon"></i>
+          <i *ngIf="faq.isOpen" class="fas fa-minus light-icon"></i>
+        </div>
+      </div>
+
+      <div class="faq-answer" [class.show]="faq.isOpen">
+        <p>{{ faq.answer | translate }}</p>
+
+        <div *ngIf="faq.id === 1 && faq.isOpen" class="helpful-section">
+          <div class="helpful-question">
+            <span>{{ "faq.helpful" | translate }}</span>
+          </div>
+          <div class="helpful-buttons">
+            <button class="helpful-btn like-btn">
+              <i class="fas fa-thumbs-up fa-2x helpful-icon"></i>
+            </button>
+            <button class="helpful-btn dislike-btn">
+              <i class="fas fa-thumbs-down fa-2x helpful-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

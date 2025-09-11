@@ -107,5 +107,77 @@
   },
   "COMMON": {
     "READ_MORE": "Read more"
+  },
+  "CONTACT": {
+    "SUBHEADING": "Start contacting us now.",
+    "TITLE": "Contact",
+    "US": "us",
+    "DESCRIPTION": "Please fill out the form or contact us directly via:",
+    "EMAIL": "hellorelume.io",
+    "PHONE": "+1 (555) 000-0000",
+    "ADDRESS": "123 Sample St, Sydney NSW 2000 AU",
+    "IMAGE_ALT": "Contact Us Image",
+    "FORM": {
+      "NAME": "Name",
+      "NAME_PLACEHOLDER": "Type your name...",
+      "NUMBER": "Number",
+      "NUMBER_PLACEHOLDER": "Type your number...",
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "Type your email...",
+      "COMPANY": "Company Name",
+      "COMPANY_PLACEHOLDER": "Type your company name...",
+      "MESSAGE": "Message",
+      "MESSAGE_PLACEHOLDER": "Type your message...",
+      "TERMS": "I accept the Terms",
+      "SEND": "Send"
+    }
+  },
+  "faq": {
+    "question1": "What documents are needed for Saudi FDA Registration for Medical Devices?",
+    "answer1": "Saudi Food and Drug Authority (SFDA) requires a complete technical file for the medical device consisting mainly of the product's detailed description, design & manufacturing process, verification & validation of essential principles of safety and performance, risk management, quality management system, and post-market surveillance.",
+
+    "question2": "What is required to be eligible to start the registration process for Medical Devices with the Saudi Food and Drug Authority (SFDA)?",
+    "answer2": "Overseas manufacturers are required to appoint an Authorized Representative (AR) to be able to apply for their medical device registration. Local manufacturers are required to obtain a medical device manufacturing license from the Saudi FDA to apply for registration.",
+
+    "question3": "How long is Saudi FDA registration valid, and when can it be renewed?",
+    "answer3": "The registration license Medical Device Marketing Authorization (MDMA) is valid for 3 years and it can be renewed every three years.",
+
+    "question4": "When can we start the renewal process of the Medical Device Marketing Authorization (MDMA) license?",
+    "answer4": "You can initiate the renewal process with the Saudi FDA 90 days before the expiry date of the license.",
+
+    "question5": "How many distributors can we have?",
+    "answer5": "There is no limit to the number of distributors that can market the product after obtaining the MDMA license.",
+
+    "question6": "How does the Saudi FDA classify the risk of Medical Devices?",
+    "answer6": "Saudi FDA has identified 22 rules for Medical Devices and 7 rules for Invitro Diagnostic devices (IVDs) in MDS-G008 to determine the risk class of the products. It is mainly depending on the duration of use and how far the product is invasive to the human body.",
+
+    "question7": "What are the fees for Saudi FDA registration of Medical Devices?",
+    "answer7": "The Saudi FDA registration fee is based on the risk classification of the product: Class A - SAR 15,000, Class B - SAR 19,000, Class C - SAR 21,000, Class D - SAR 23,000.",
+
+    "question8": "Can we change the Authorized Representative (AR)? will it affect the registration documents?",
+    "answer8": "The legal manufacturer has the right to change the AR or appoint a new AR. This will have no impact on the registered products as long as there is no ongoing registration.",
+
+    "question9": "Can we have more than one Authorized Representative (AR)?",
+    "answer9": "Yes. However, not for the same product.",
+
+    "question10": "Is the Low-risk devices Registration pathway still available?",
+    "answer10": "No, this registration route was closed by the Saudi FDA on the 27th of September 2022.",
+
+    "question11": "Who can market the Medical Device after registration?",
+    "answer11": "Any Saudi FDA-licensed distributor can market the device in the Saudi market.",
+
+    "question12": "Is it a must for the distributor to be our Authorized Representative (AR)?",
+    "answer12": "Distributors within categories C and D have the option to either obtain the ISO 13485 certificate or get audited by the Saudi FDA on an annual basis to ensure full compliance with ISO 13485 requirements.",
+
+    "question13": "Is the CE / FDA required for medical device registration with the Saudi FDA?",
+    "answer13": "No. However, they can be provided as supportive evidence during the registration process.",
+
+    "question14": "Is it mandatory for the local distributors to hold the ISO 13485 certificate?",
+    "answer14": "Yes, local distributors within categories A and B are mandated to obtain an ISO 13485 certificate from an SFDA or IAF-accredited certification body.",
+
+    "question15": "How many items can be included in one MDMA certificate? And is there a specific consideration for that?",
+    "answer15": "Every MDMA application can have no more than 50 trade names registered with the condition that it shall comply with the SFDA bundling criteria according to Annex (15) of MD5-REQ01.",
+
+    "helpful": "Was This Content Helpful?"
   }
 }
