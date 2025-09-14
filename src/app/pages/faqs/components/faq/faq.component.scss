@@ -253,3 +253,42 @@
 .helpful-btn:hover .helpful-icon {
   color: #3da53d; /* green on hover */
 }
+
+// Add to faq.component.scss
+
+// Animation keyframes if not using animate.css
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__animated {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+// Ensure initial hidden state for elements that will be animated
+[appScrollAnimate] {
+  opacity: 0;
+}
+
+// Optional: Add smooth transition for FAQ items
+.faq-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}

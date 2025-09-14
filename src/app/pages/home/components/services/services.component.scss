@@ -62,10 +62,9 @@
   .service-card {
     perspective: 1000px;
     height: 312px;
-    // Fix: Ensure the card container handles hover properly
     cursor: pointer;
 
-    // Fix: Move hover to the service-card level instead of card-inner
+    // Hover effect for card flip
     &:hover .card-inner {
       transform: rotateY(180deg);
     }
@@ -78,13 +77,7 @@
       transform-style: preserve-3d;
       box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
-      // Fix: Ensure no pointer events interfere
       pointer-events: none;
-
-      // Remove the original hover effect from here
-      // &:hover {
-      //   transform: rotateY(180deg);
-      // }
     }
 
     .card-front,
@@ -95,7 +88,6 @@
       backface-visibility: hidden;
       border-radius: 15px;
       overflow: hidden;
-      // Fix: Re-enable pointer events on the cards themselves
       pointer-events: auto;
     }
 
@@ -112,7 +104,6 @@
         justify-content: center;
         height: 100%;
         text-align: center;
-        // Fix: Prevent text selection that might interfere with hover
         user-select: none;
 
         @media (max-width: 480px) {
@@ -128,7 +119,6 @@
           img {
             width: 100px;
             height: 100px;
-            // Fix: Prevent image drag that might interfere with hover
             pointer-events: none;
             user-select: none;
           }
@@ -141,7 +131,6 @@
           line-height: 28px;
           color: #00407e;
           margin: 0 0 10px 0;
-          // Fix: Prevent text selection
           user-select: none;
 
           @media (max-width: 480px) {
@@ -158,7 +147,6 @@
           color: #323232;
           flex-grow: 1;
           margin-bottom: auto;
-          // Fix: Prevent text selection
           user-select: none;
 
           @media (max-width: 480px) {
@@ -176,7 +164,6 @@
           color: #00af17;
           text-decoration: none;
           margin-top: 20px;
-          // Fix: Ensure read-more links are clickable
           pointer-events: auto;
 
           .arrow-icon {
@@ -213,7 +200,6 @@
         color: #fff;
         max-height: 100%;
         overflow-y: auto;
-        // Fix: Prevent text selection on back card too
         user-select: none;
 
         /* Scrollbar styling */
@@ -246,7 +232,6 @@
           font-size: 14px;
           color: #00f020;
           text-decoration: none;
-          // Fix: Ensure read-more links are clickable on back too
           pointer-events: auto;
 
           .arrow-icon {
@@ -281,6 +266,7 @@
       cursor: pointer;
       color: #fff;
       font-size: 16px;
+      transition: all 0.3s ease;
 
       .arrow-icon {
         transform: rotate(-180deg);
@@ -288,6 +274,61 @@
 
       &:hover {
         opacity: 0.9;
+        transform: translateY(-2px);
+      }
+    }
+    .three-btn {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height, or 150% */
+      letter-spacing: -0.02em;
+      padding: 12px 24px;
+
+      color: #00407e;
+
+      border: 1px solid #00407e;
+      border-radius: 8px;
+    }
+  }
+}
+
+// Additional scroll animation styles for better performance
+[appScrollAnimate] {
+  will-change: opacity, transform;
+}
+
+// Custom animations for service cards
+.service-card {
+  // Add subtle scale effect on scroll animation completion
+  &.animate__animated.animate__fadeInUp {
+    animation-duration: 0.6s;
+  }
+
+  // Enhanced hover effects that work well with scroll animations
+  &:hover {
+    .icon-container {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Responsive animation adjustments
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 20px;
+
+    .header {
+      margin-bottom: 60px;
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
       }
     }
   }

@@ -1,0 +1,43 @@
+<!-- about-info.component.html -->
+<section class="about-info-section">
+  <div class="about-container">
+    <div class="about-content">
+      <div
+        class="section-title"
+        appScrollAnimate
+        animationClass="animate__fadeInDown"
+      >
+        <div class="subheading">{{ "about.subheading" | translate }}</div>
+      </div>
+      <div class="content-wrapper">
+        <h2
+          class="heading"
+          appScrollAnimate
+          animationClass="animate__fadeInLeft"
+          animationDelay="0.2s"
+        >
+          {{ "about.headingPrefix" | translate }}
+          <span class="medgate-text">{{
+            "about.headingMedgate" | translate
+          }}</span>
+        </h2>
+        <p
+          class="description"
+          appScrollAnimate
+          animationClass="animate__fadeInRight"
+          animationDelay="0.4s"
+        >
+          {{ "about.description" | translate }}
+        </p>
+      </div>
+    </div>
+    <div
+      class="about-image"
+      appScrollAnimate
+      animationClass="animate__zoomIn"
+      animationDelay="0.6s"
+    >
+      <img src="/assets/about-img.png" alt="About" />
+    </div>
+  </div>
+</section>

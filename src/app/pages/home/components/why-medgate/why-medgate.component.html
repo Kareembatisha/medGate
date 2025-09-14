@@ -1,21 +1,40 @@
 <section class="why-medgate-section">
   <div class="container">
-    <div class="header-section">
-      <h2 class="section-title">
-        <span class="text-main">{{ 'WHY_MEDGATE.WHY' | translate }}</span>
-        <span class="text-second">{{ 'WHY_MEDGATE.MEDGATE' | translate }}</span>
+    <div class="header-section" 
+         appScrollAnimate 
+         animationClass="animate__fadeInUp">
+      <h2 class="section-title" 
+          appScrollAnimate 
+          animationClass="animate__fadeInUp" 
+          animationDelay="0.1s">
+        <span class="text-main">{{ "WHY_MEDGATE.WHY" | translate }}</span>
+        <span class="text-second">{{ "WHY_MEDGATE.MEDGATE" | translate }}</span>
       </h2>
-      <div class="title-underline"></div>
-      <p class="section-subtitle">
-        {{ 'WHY_MEDGATE.SUBTITLE' | translate }}
+      <div class="title-underline" 
+           appScrollAnimate 
+           animationClass="animate__fadeIn" 
+           animationDelay="0.3s"></div>
+      <p class="section-subtitle" 
+         appScrollAnimate 
+         animationClass="animate__fadeInUp" 
+         animationDelay="0.5s">
+        {{ "WHY_MEDGATE.SUBTITLE" | translate }}
       </p>
     </div>
 
     <div class="cards-container">
       <div class="card-row">
-        <div *ngFor="let card of cards" class="feature-card">
+        <div 
+          *ngFor="let card of cards; let i = index" 
+          class="feature-card"
+          appScrollAnimate 
+          animationClass="animate__fadeInUp"
+          [animationDelay]="(i * 0.2 + 0.1) + 's'">
           <div class="card-content">
-            <div class="card-image">
+            <div class="card-image" 
+                 appScrollAnimate 
+                 animationClass="animate__bounceIn" 
+                 [animationDelay]="(i * 0.2 + 0.4) + 's'">
               <img [src]="card.image" [alt]="card.title | translate" />
             </div>
             <h3 class="card-title">{{ card.title | translate }}</h3>

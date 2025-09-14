@@ -1,2 +1,9 @@
+<!-- Global Loader Overlay -->
+<div class="loader-wrapper" *ngIf="loading()">
+  <span class="loader"></span>
+</div>
 
-<router-outlet />
+<!-- Main App Content -->
+<div *ngIf="!loading()">
+  <router-outlet></router-outlet>
+</div>

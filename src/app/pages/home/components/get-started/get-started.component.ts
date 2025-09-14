@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-get-started',
@@ -10,9 +11,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./get-started.component.scss'],
 })
 export class GetStartedComponent {
+  constructor(private router: Router) {}
+
   onRegister() {
-    // Handle register button click
-    console.log('Register button clicked');
-    // Add navigation or modal opening logic here
+    // Navigate to contact-us page
+    this.router.navigate(['/contact-us']);
   }
 }

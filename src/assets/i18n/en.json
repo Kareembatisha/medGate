@@ -40,7 +40,12 @@
       "TITLE": "Enter your email",
       "PLACEHOLDER": "Email address",
       "BUTTON": "Subscribe",
-      "NOTE": "By subscribing you agree to with our Privacy Policy"
+      "NOTE": "By subscribing you agree to with our Privacy Policy",
+      "SUCCESS_TITLE": "Subscribed!",
+      "SUCCESS_MSG": "You have successfully subscribed 🎉",
+      "ERROR_TITLE": "Invalid Email",
+      "ERROR_MSG": "Please enter a valid email address.",
+      "OK": "OK"
     },
 
     "COPYRIGHT": "© 2025 MedGate. All rights reserved.",
@@ -105,9 +110,12 @@
     "AUTHORIZED_REPRESENTATIVE_LONG_DESC": "Foreign manufacturers who wish to market medical devices in Saudi Arabia are required by law to appoint a local Authorized Representative (AR). The AR serves as the official liaison between the manufacturer and the SFDA, assuming responsibility for pre- and post-market regulatory compliance, incident reporting, and communication with health authorities. As your Authorized Representative, MedGate ensures that your devices meet all SFDA regulatory obligations without requiring your physical presence in the Kingdom. We manage documentation, handle registration processes, authenticate legal agreements, and oversee communication with regulators. In addition, we assist with post-market monitoring, vigilance reporting, and recall management if needed. With MedGate as your trusted AR, you can confidently expand into the Saudi market, knowing that your compliance and regulatory responsibilities are in expert hands",
     "PRODUCT_CLASSIFICATION_SYSTEM_LONG_DESC": "is a critical first step in determining the regulatory requirements for medical device registration. Devices are classified into different risk categories based on their intended use, invasiveness, duration of contact with the human body, and overall safety profile. A correct classification ensures that the appropriate approval pathway is followed, while misclassification can lead to costly delays or regulatory rejections. At MedGate, we help manufacturers and distributors accurately classify their medical devices in line with SFDA regulations. Our experts assess product specifications, compare them with international benchmarks, and provide a detailed classification strategy that clarifies all necessary submission requirements. By guiding you through PCS, we enable a smoother and faster registration process, reduce compliance risks, and ensure that your device is positioned correctly in the Saudi healthcare market"
   },
+  "BACK_TO_SERVICES": "Back to Services",
   "COMMON": {
     "READ_MORE": "Read more"
   },
+  "FAQs": "FAQs",
+  "Contact Us": "Contact Us",
   "CONTACT": {
     "SUBHEADING": "Start contacting us now.",
     "TITLE": "Contact",
@@ -179,5 +187,44 @@
     "answer15": "Every MDMA application can have no more than 50 trade names registered with the condition that it shall comply with the SFDA bundling criteria according to Annex (15) of MD5-REQ01.",
 
     "helpful": "Was This Content Helpful?"
+  },
+  "aboutHero": {
+    "empowering": "Empowering",
+    "medical": "Medical",
+    "innovation": "Innovation in Saudi Arabia",
+    "subtitle": "MedGate helps manufacturers and distributors bring medical devices to the Saudi market with confidence, speed, and full SFDA compliance."
+  },
+  "about": {
+    "subheading": "About MedGate",
+    "headingPrefix": "About",
+    "headingMedgate": "MedGate",
+    "description": "MedGate is a specialized regulatory solutions company for medical devices in Saudi Arabia. We guide international and local manufacturers through every step of the registration process—from classification and licensing to post-market surveillance.\n\nWith a deep understanding of SFDA regulations and international standards, our team ensures seamless market access and long-term compliance. We combine technical expertise with a client-focused approach to make your journey into the Saudi market faster, safer, and more efficient."
+  },
+  "CAROUSEL-2": {
+    "SLIDE1_LABEL": "Vision slide",
+    "SLIDE2_LABEL": "Mission slide",
+    "SLIDE3_LABEL": "Values slide",
+    "VISION": {
+      "TITLE": "Our vision",
+      "DESCRIPTION": "At MedGate, our vision is to become the trusted global partner for medical device companies entering the Saudi healthcare market. We are committed to enabling innovation, strengthening patient safety, and helping the Kingdom achieve its healthcare transformation goals."
+    },
+    "MISSION": {
+      "TITLE": "Our mission",
+      "DESCRIPTION": "At MedGate, our mission is to connect innovation with regulation, ensuring medical devices comply with SFDA and global standards—so patients receive safe technologies faster and with confidence."
+    },
+    "PREV": "Previous",
+    "NEXT": "Next"
+  },
+  "LOCATIONS": {
+    "TITLE_OUR": "Our",
+    "TITLE_LOCATIONS": "Locations",
+    "SUBTITLE": "We are based in Saudi Arabia, serving local and international clients with regulatory expertise tailored to the region. Our office connects you directly to the SFDA ecosystem, ensuring hands-on support throughout your product journey.",
+    "KSA": {
+      "TITLE": "Saudi Arabia",
+      "ADDRESS": "Riyadh, Saudi Arabia",
+      "IMAGE_ALT": "Saudi Arabia Location"
+    },
+    "VIEW_MAP": "View on Map",
+    "MAP_TITLE": "Company Locations Map"
   }
 }

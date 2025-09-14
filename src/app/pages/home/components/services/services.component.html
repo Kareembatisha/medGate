@@ -1,17 +1,41 @@
 <section class="services-section" [dir]="direction">
   <div class="container">
     <div class="header">
-      <h2>{{ "SERVICES.OUR_SERVICES" | translate }}</h2>
-      <p>{{ "SERVICES.COMPREHENSIVE_SOLUTIONS" | translate }}</p>
+      <h2
+        appScrollAnimate
+        animationClass="animate__fadeInUp"
+        animationDelay="0s"
+      >
+        {{ "SERVICES.OUR_SERVICES" | translate }}
+      </h2>
+      <p
+        appScrollAnimate
+        animationClass="animate__fadeInUp"
+        animationDelay="0.2s"
+      >
+        {{ "SERVICES.COMPREHENSIVE_SOLUTIONS" | translate }}
+      </p>
     </div>
 
     <div class="services-grid">
-      <div class="service-card" *ngFor="let service of displayedServices">
+      <div
+        class="service-card"
+        *ngFor="let service of displayedServices; let i = index"
+        appScrollAnimate
+        animationClass="animate__fadeInUp"
+        [animationDelay]="i * 0.15 + 0.3 + 's'"
+      >
         <div class="card-inner">
           <div class="card-front">
             <div class="card-content">
               <div class="icon-container">
-                <img [src]="service.icon" alt="icon" width="40" height="40" />
+                <img
+                  [src]="service.icon"
+                  alt="icon"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
               </div>
               <h3>{{ service.title | translate }}</h3>
             </div>
@@ -36,11 +60,26 @@
       </div>
     </div>
 
-    <div class="view-services-btn" *ngIf="showViewButton">
+    <div
+      class="view-services-btn"
+      *ngIf="showViewButton"
+      appScrollAnimate
+      animationClass="animate__fadeInUp"
+      animationDelay="0.8s"
+    >
+      @if (!showOnlyThree) {
+      <!-- First Button (Primary) -->
       <button class="btn-primary" [routerLink]="['/services']">
-        {{ viewButtonText | translate }}
+        {{ "SERVICES.VIEW_SERVICES" | translate }}
         <span class="arrow-icon"></span>
       </button>
+      } @if (showOnlyThree) {
+      <!-- Second Button (Secondary / Outline) -->
+      <button class="three-btn" [routerLink]="['/services']">
+        {{ "BACK_TO_SERVICES" | translate }}
+        <span class="arrow-icon"></span>
+      </button>
+      }
     </div>
   </div>
 </section>

@@ -71,7 +71,11 @@
               [(ngModel)]="email"
               class="email-input"
             />
-            <button type="button" class="btn btn-primary" (click)="subscribe()">
+            <button
+              type="button"
+              class="btn custom-subscribe-btn"
+              (click)="subscribe()"
+            >
               {{ "FOOTER.SUBSCRIBE.BUTTON" | translate }}
             </button>
           </div>

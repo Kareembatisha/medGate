@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-service-details-hero',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule,RouterModule],
   templateUrl: './service-details-hero.component.html',
   styleUrls: ['./service-details-hero.component.scss'],
 })
@@ -16,4 +17,6 @@ export class ServiceDetailsHeroComponent {
   @Input() description: string = 'Service description goes here.';
   @Input() buttonText: string = 'Get A Quote';
   @Input() showButton: boolean = true;
+
+
 }

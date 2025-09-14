@@ -1,5 +1,12 @@
 // services.component.ts
-import { Component, Input } from '@angular/core';
+import {
+  Component,
+  Input,
+  ElementRef,
+  ViewChild,
+  AfterViewInit,
+  OnDestroy,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   LangChangeEvent,
@@ -16,18 +23,29 @@ import {
   faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import { RouterModule } from '@angular/router';
+import { ScrollAnimateDirective } from '../../../../directives/scroll-animate.directive';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslateModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    TranslateModule,
+    ScrollAnimateDirective,
+  ],
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss'],
 })
-export class ServicesComponent {
+export class ServicesComponent implements AfterViewInit, OnDestroy {
   direction: 'ltr' | 'rtl' = 'ltr';
   @Input() showViewButton: boolean = true;
   @Input() showOnlyThree: boolean = false;
+
+  @ViewChild('servicesSection') servicesSection!: ElementRef;
+
+  private observer!: IntersectionObserver;
+  private hasLoaded = false;
 
   constructor(private translate: TranslateService) {}
 
@@ -91,6 +109,46 @@ export class ServicesComponent {
     // Listen for language changes
     this.translate.onLangChange.subscribe((event: LangChangeEvent) => {
       this.setDirection(event.lang);
+    });
+  }
+
+  ngAfterViewInit(): void {
+    this.setupIntersectionObserver();
+  }
+
+  ngOnDestroy(): void {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+
+  private setupIntersectionObserver(): void {
+    const options = {
+      root: null,
+      rootMargin: '200px 0px', // Load 200px before entering viewport
+      threshold: 0.1,
+    };
+
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !this.hasLoaded) {
+          this.hasLoaded = true;
+          this.preloadImages();
+          this.observer.disconnect();
+        }
+      });
+    }, options);
+
+    if (this.servicesSection) {
+      this.observer.observe(this.servicesSection.nativeElement);
+    }
+  }
+
+  private preloadImages(): void {
+    // Preload service icons
+    this.services.forEach((service) => {
+      const img = new Image();
+      img.src = service.icon;
     });
   }
 

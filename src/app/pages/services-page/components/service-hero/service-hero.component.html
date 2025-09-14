@@ -4,21 +4,49 @@
     <div class="content-wrapper">
       <div class="text-content">
         <div class="content">
-          <h1 class="heading">{{ "SERVICE_HERO.HEADING" | translate }}</h1>
-          <p class="subtitle">{{ "SERVICE_HERO.SUBTITLE" | translate }}</p>
-          <p class="description">
+          <h1
+            class="heading"
+            appScrollAnimate
+            animationClass="animate__fadeInUp"
+          >
+            {{ "SERVICE_HERO.HEADING" | translate }}
+          </h1>
+          <p
+            class="subtitle"
+            appScrollAnimate
+            animationClass="animate__fadeInUp"
+            animationDelay="0.2s"
+          >
+            {{ "SERVICE_HERO.SUBTITLE" | translate }}
+          </p>
+          <p
+            class="description"
+            appScrollAnimate
+            animationClass="animate__fadeInUp"
+            animationDelay="0.4s"
+          >
             {{ "SERVICE_HERO.DESCRIPTION" | translate }}
           </p>
 
-          <div class="actions">
-            <button class="cta-button">
+          <div
+            class="actions"
+            appScrollAnimate
+            animationClass="animate__fadeInUp"
+            animationDelay="0.6s"
+          >
+            <button class="cta-button" (click)="goToContact()">
               {{ "SERVICE_HERO.START_NOW" | translate }}
             </button>
           </div>
         </div>
       </div>
 
-      <div class="image-content">
+      <div
+        class="image-content"
+        appScrollAnimate
+        animationClass="animate__fadeInRight"
+        animationDelay="0.3s"
+      >
         <div class="image-placeholder">
           <!-- This would be replaced with an actual image -->
           <div class="placeholder-image">

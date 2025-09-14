@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollAnimateDirective } from '../../../../directives/scroll-animate.directive';
 
 interface FAQ {
   id: number;
@@ -12,7 +13,7 @@ interface FAQ {
 @Component({
   selector: 'app-faq',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule,ScrollAnimateDirective],
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.scss'],
 })

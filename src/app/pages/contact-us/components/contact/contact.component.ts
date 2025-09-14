@@ -7,13 +7,19 @@ import {
   Validators,
 } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollAnimateDirective } from '../../../../directives/scroll-animate.directive';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule,TranslateModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    TranslateModule,
+    ScrollAnimateDirective,
+  ],
 })
 export class ContactComponent {
   contactForm: FormGroup;

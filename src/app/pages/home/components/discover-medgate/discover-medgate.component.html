@@ -2,19 +2,39 @@
   <div class="content-container">
     <div class="content-section">
       <div class="section-title">
-        <h1>{{ 'DISCOVER_MEDGATE.TITLE' | translate }}</h1>
-        <p>
-          {{ 'DISCOVER_MEDGATE.DESCRIPTION' | translate }}
+        <h1
+          appScrollAnimate
+          animationClass="animate__fadeInUp"
+          animationDelay="0s"
+        >
+          {{ "DISCOVER_MEDGATE.TITLE" | translate }}
+        </h1>
+        <p
+          appScrollAnimate
+          animationClass="animate__fadeInUp"
+          animationDelay="0.2s"
+        >
+          {{ "DISCOVER_MEDGATE.DESCRIPTION" | translate }}
         </p>
       </div>
-      <button class="register-btn">
-        {{ 'DISCOVER_MEDGATE.REGISTER_BTN' | translate }}
+      <button class="register-btn" (click)="goToContact()">
+        {{ "DISCOVER_MEDGATE.REGISTER_BTN" | translate }}
       </button>
     </div>
 
-    <div class="video-section">
+    <div
+      class="video-section"
+      appScrollAnimate
+      animationClass="animate__fadeInRight"
+      animationDelay="0.3s"
+    >
       <div class="video-placeholder">
-        <div class="play-button">
+        <div
+          class="play-button"
+          appScrollAnimate
+          animationClass="animate__zoomIn"
+          animationDelay="0.8s"
+        >
           <svg
             width="48"
             height="48"

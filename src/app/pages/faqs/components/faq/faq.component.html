@@ -1,6 +1,14 @@
+<!-- faq.component.html -->
 <div class="faq-container">
   <div class="faq-list">
-    <div *ngFor="let faq of faqs" class="faq-item" [class.active]="faq.isOpen">
+    <div 
+      *ngFor="let faq of faqs; let i = index" 
+      class="faq-item" 
+      [class.active]="faq.isOpen"
+      appScrollAnimate 
+      [animationClass]="'animate__fadeInUp'"
+      [animationDelay]="(i * 0.1) + 's'"
+    >
       <div class="faq-question" (click)="toggleFaq(faq)">
         <span class="question-text">{{ faq.question | translate }}</span>
         <div class="toggle-icon">

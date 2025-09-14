@@ -1,0 +1,144 @@
+.section-container {
+  padding: 64px 15px;
+}
+
+.location-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.location-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.location-image {
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.location-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 140%;
+  color: #000000;
+}
+
+
+.location-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 150%;
+  color: #6c757d;
+}
+
+.location-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 150%;
+  color: #0d6efd;
+  transition: color 0.2s ease;
+}
+
+.location-link:hover {
+  color: #0a58ca;
+}
+
+.head-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.head-section h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 120%;
+  color: #000000;
+}
+
+.head-section p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 150%;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .head-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .head-section p {
+    font-size: 1rem;
+  }
+
+  .location-title {
+    font-size: 1.1rem;
+  }
+
+  .location-address,
+  .location-link {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-image img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-container {
+    padding: 40px 15px;
+  }
+
+  .head-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .location-item {
+    padding: 1rem !important;
+  }
+
+  .location-image {
+    padding: 8px;
+  }
+
+  .location-image img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* RTL support */
+.location-card {
+  &:dir(rtl),
+  &[dir="rtl"] {
+    .location-item {
+      text-align: right;
+
+      .location-image {
+        margin-right: 0 !important;
+        margin-left: 1rem;
+      }
+
+      .location-link {
+        i.fas {
+          transform: rotate(180deg);
+          margin-right: 0.5rem;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

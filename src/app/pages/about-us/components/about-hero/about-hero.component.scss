@@ -1,0 +1,130 @@
+.about-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 0;
+  width: 100%;
+  min-height: 356px;
+  background: url("/assets/about-hero.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center; /* ensures consistency on RTL/LTR */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 768px;
+  max-width: 90%; /* keeps it fluid */
+  margin: 0 auto; /* centers horizontally */
+}
+
+.hero-title {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 56px); /* auto scales between 24px → 56px */
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  word-break: break-word; /* prevents overflow on long words */
+}
+
+.hero-title .highlight {
+  color: #3da53d;
+}
+
+.hero-subtitle {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 18px); /* responsive scaling */
+  line-height: 150%;
+  text-align: center;
+  color: #00af17;
+  margin: 0;
+  padding: 0 10px; /* small padding for tiny screens */
+}
+
+/* 🔹 Responsive tweaks */
+@media (max-width: 992px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+  .hero-content {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 50px 0;
+    margin-top: 70px;
+  }
+  .hero-content {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    padding: 40px 10px;
+  }
+  .hero-title {
+    font-size: 24px;
+  }
+  .hero-subtitle {
+    font-size: 14px;
+  }
+}
+// Add to about-hero.component.scss
+
+// Animation keyframes if not using animate.css
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+// Ensure initial hidden state for elements that will be animated
+[appScrollAnimate] {
+  opacity: 0;
+}

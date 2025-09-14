@@ -1,12 +1,12 @@
-// why-medgate.component.ts
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollAnimateDirective } from '../../../../directives/scroll-animate.directive';
 
 @Component({
   selector: 'app-why-medgate',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, ScrollAnimateDirective],
   templateUrl: './why-medgate.component.html',
   styleUrls: ['./why-medgate.component.scss'],
 })

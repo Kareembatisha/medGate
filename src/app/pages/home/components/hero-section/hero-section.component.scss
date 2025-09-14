@@ -8,6 +8,7 @@
   width: 100%;
   min-height: 886px;
   position: relative;
+  overflow: hidden; /* Prevent horizontal scroll during animations */
 
   .container {
     display: flex;
@@ -121,6 +122,12 @@
     }
   }
 
+  /* Animation performance improvements */
+  .animate__animated {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+
   /* RTL Support */
   &[dir="rtl"] {
     direction: rtl;
@@ -168,4 +175,16 @@
       gap: 16px;
     }
   }
+}
+
+// Custom hover effects for button
+.custom-button {
+  &.animate__pulse {
+    animation-duration: 0.5s !important;
+  }
+}
+
+// Additional scroll animation styles for better performance
+[appScrollAnimate] {
+  will-change: opacity, transform;
 }

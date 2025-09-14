@@ -266,10 +266,8 @@ body {
   }
 
   .contact-form {
-
-  background: none;
-
-}
+    background: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -318,5 +316,99 @@ body {
 
   .content h2 {
     font-size: 24px;
+  }
+}
+
+// Add to contact.component.scss
+
+// Animation keyframes if not using animate.css
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(40px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.animate__animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate__zoomIn {
+  animation-name: zoomIn;
+}
+
+// Ensure initial hidden state for elements that will be animated
+[appScrollAnimate] {
+  opacity: 0;
+}
+
+// Enhanced form animations
+.form-group {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateX(5px);
+  }
+}
+
+.submit-btn {
+  transition: all 0.3s ease, transform 0.5s ease;
+
+  &:hover:not(:disabled) {
+    transform: scale(1.05);
   }
 }
