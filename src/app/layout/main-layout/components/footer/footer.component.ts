@@ -1,26 +1,40 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import Swal from 'sweetalert2';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule],
+  imports: [CommonModule, FormsModule, TranslateModule, RouterModule],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent {
+export class FooterComponent implements OnInit {
   email: string = '';
+  currentLang: string = 'en';
 
-  constructor(private translate: TranslateService) {}
+  // Footer nav items mirroring header
+  navItems = [
+    { labelKey: 'HEADER.HOME', link: '/' },
+    { labelKey: 'HEADER.SERVICES', link: '/services' },
+    { labelKey: 'HEADER.ABOUT', link: '/about-us' },
+    { labelKey: 'HEADER.FAQS', link: '/faqs' },
+  ];
+
+  constructor(
+    private translate: TranslateService,
+    @Inject(PLATFORM_ID) private platformId: any
+  ) {
+    this.currentLang = translate.currentLang || 'en';
+  }
+
+  ngOnInit() {}
 
   subscribe() {
     if (this.email && this.validateEmail(this.email)) {
-      console.log('Subscribed with email:', this.email);
-
-      // ✅ SweetAlert success as toast
       Swal.fire({
         icon: 'success',
         title: this.translate.instant('FOOTER.SUBSCRIBE.SUCCESS_TITLE'),
@@ -31,10 +45,8 @@ export class FooterComponent {
         timer: 3000,
         timerProgressBar: true,
       });
-
       this.email = '';
     } else {
-      // ❌ SweetAlert error as toast
       Swal.fire({
         icon: 'error',
         title: this.translate.instant('FOOTER.SUBSCRIBE.ERROR_TITLE'),

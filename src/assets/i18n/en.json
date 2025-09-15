@@ -87,7 +87,8 @@
   },
   "SERVICES": {
     "SERVICE_DETAILS": "Service Details",
-    "OUR_SERVICES": "Our Services",
+    "OUR": "Our",
+    "SERVICES": "Services",
     "COMPREHENSIVE_SOLUTIONS": "Comprehensive solutions that cover all your needs",
     "VIEW_SERVICES": "View services",
     "MEDICAL_DEVICE_MARKETING_AUTH": "Medical Device Marketing Authorization (MDMA)",

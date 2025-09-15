@@ -6,7 +6,7 @@
         <div class="logo">
           <img
             src="assets/medGatelogo.PNG"
-            alt="IA MEOGATE Logo"
+            alt="MedGate Logo"
             class="logo-img"
           />
         </div>
@@ -18,42 +18,13 @@
         </div>
       </div>
 
-      <!-- Center Section: Links -->
+      <!-- Center Section: Dynamic Navigation Links -->
       <div class="footer-center">
         <div class="links-column">
           <h4>{{ "FOOTER.HOME.TITLE" | translate }}</h4>
           <ul>
-            <li>
-              <a href="#">{{ "FOOTER.HOME.LINK1" | translate }}</a>
-            </li>
-            <li>
-              <a href="#">{{ "FOOTER.HOME.LINK2" | translate }}</a>
-            </li>
-            <li>
-              <a href="#">{{ "FOOTER.HOME.LINK3" | translate }}</a>
-            </li>
-            <li>
-              <a href="#">{{ "FOOTER.HOME.LINK4" | translate }}</a>
-            </li>
-            <li>
-              <a href="#">{{ "FOOTER.HOME.LINK5" | translate }}</a>
-            </li>
-          </ul>
-        </div>
-        <div class="links-column">
-          <h4>{{ "FOOTER.ABOUT.TITLE" | translate }}</h4>
-          <ul>
-            <li>
-              <a href="#">{{ "FOOTER.ABOUT.LINK1" | translate }}</a>
-            </li>
-            <li>
-              <a href="#">{{ "FOOTER.ABOUT.LINK2" | translate }}</a>
-            </li>
-            <li>
-              <a href="#">{{ "FOOTER.ABOUT.LINK3" | translate }}</a>
-            </li>
-            <li>
-              <a href="#">{{ "FOOTER.ABOUT.LINK4" | translate }}</a>
+            <li *ngFor="let item of navItems">
+              <a [routerLink]="item.link">{{ item.labelKey | translate }}</a>
             </li>
           </ul>
         </div>
@@ -66,7 +37,6 @@
           <div class="subscription-form">
             <input
               type="email"
-              pInputText
               [placeholder]="'FOOTER.SUBSCRIBE.PLACEHOLDER' | translate"
               [(ngModel)]="email"
               class="email-input"
@@ -110,7 +80,7 @@
             <i class="fab fa-twitter"></i>
           </a>
           <a href="#" class="social-icon linkedin">
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fab fa-linkedin"></i>
           </a>
         </div>
       </div>

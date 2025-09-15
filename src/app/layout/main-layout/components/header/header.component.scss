@@ -6,8 +6,6 @@
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
   position: relative;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-  // Sticky navbar animation
   &.sticky {
     position: fixed;
     top: 0;
@@ -23,12 +21,10 @@
       transform: scale(0.95);
     }
   }
-
   .container-fluid {
     padding: 0px 35px;
     height: 100%;
     width: 100%;
-    transition: padding 0.3s ease;
 
     @media (max-width: 1200px) {
       padding: 0 24px;
@@ -56,34 +52,34 @@
   .logo-container {
     flex: 0 0 auto;
     z-index: 1001;
-    transition: transform 0.3s ease;
+    cursor: pointer;
 
     .logo {
       width: 195px;
       height: 54px;
       object-fit: contain;
-      cursor: pointer;
-      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      transform-origin: left center;
-
-      &:hover {
-        transform: scale(1.05) translateX(5px);
-        filter: brightness(1.1) drop-shadow(0 2px 4px rgba(1, 64, 126, 0.2));
-      }
+      transition: transform 0.3s ease;
 
       @media (max-width: 992px) {
-        width: 170px;
-        height: 47px;
+        width: 160px;
+        height: 44px;
       }
 
       @media (max-width: 768px) {
-        width: 160px;
-        height: 44px;
+        width: 150px;
+        height: 42px;
       }
 
       @media (max-width: 480px) {
         width: 140px;
         height: 38px;
+      }
+
+      // Only scale on hover (desktop)
+      @media (min-width: 993px) {
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -115,27 +111,6 @@
 
     .nav-item {
       flex: none;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        width: 0;
-        height: 2px;
-        background: linear-gradient(90deg, #01407e 30.77%, #0074e4 100%);
-        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        transform: translateX(-50%);
-      }
-
-      &:hover::after {
-        width: 80%;
-      }
-
-      &.active::after {
-        width: 100%;
-      }
     }
 
     .nav-link {
@@ -146,7 +121,7 @@
       letter-spacing: 0.01em;
       color: #070707;
       text-decoration: none;
-      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition: all 0.3s ease-out(0.25, 0.46, 0.45, 0.94);
       position: relative;
       padding: 8px 4px;
       white-space: nowrap;
@@ -177,7 +152,6 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    transition: transform 0.3s ease;
 
     @media (max-width: 992px) {
       display: none;
@@ -186,7 +160,6 @@
     .language-switcher {
       display: flex;
       gap: 6px;
-      perspective: 1000px;
 
       .lang-btn {
         padding: 6px 12px;
@@ -197,27 +170,20 @@
         font-size: 14px;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
-        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition: all 0.3s ease;
         min-width: 40px;
-        transform-style: preserve-3d;
 
         &.active {
           background: linear-gradient(90deg, #01407e 30.77%, #0074e4 100%);
           color: white;
           border-color: #01407e;
-          box-shadow: 0px 4px 8px rgba(1, 64, 126, 0.3);
-          transform: translateZ(10px) scale(1.05);
+          box-shadow: 0px 2px 4px rgba(1, 64, 126, 0.2);
         }
 
         &:hover:not(.active) {
           background: #f8f9fa;
           border-color: #0074e4;
-          transform: translateY(-2px) rotateX(15deg);
-          box-shadow: 0 4px 8px rgba(0, 116, 228, 0.2);
-        }
-
-        &:active {
-          transform: translateY(0) scale(0.98);
+          transform: translateY(-1px);
         }
       }
     }
@@ -244,9 +210,7 @@
     font-size: 16px;
     line-height: 150%;
     color: #ffffff;
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    position: relative;
-    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     @media (max-width: 992px) {
       display: none;
@@ -258,34 +222,14 @@
       padding: 6px 16px;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-      );
-      transition: left 0.7s ease;
-    }
-
     &:hover {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-
-      &::before {
-        left: 100%;
-      }
+      transform: translateY(-2px);
+      box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
     }
 
     &:active {
-      transform: translateY(0) scale(0.98);
-      box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+      transform: translateY(0);
+      box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
     }
   }
 
@@ -330,13 +274,11 @@
           color: white;
           border-color: #01407e;
           box-shadow: 0px 2px 4px rgba(1, 64, 126, 0.2);
-          transform: scale(1.1);
         }
 
         &:hover:not(.active) {
           background: #f8f9fa;
           border-color: #0074e4;
-          transform: translateY(-1px);
         }
       }
     }
@@ -349,14 +291,13 @@
       color: #070707;
       padding: 8px;
       border-radius: 4px;
-      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition: all 0.3s ease;
       z-index: 1001;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 40px;
       height: 40px;
-      position: relative;
 
       @media (max-width: 480px) {
         font-size: 20px;
@@ -366,41 +307,17 @@
       }
 
       i {
-        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        position: relative;
-        z-index: 2;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        background: #f5f5f5;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        z-index: 1;
+        transition: transform 0.3s ease;
       }
 
       &:hover {
-        &::before {
-          width: 40px;
-          height: 40px;
-        }
+        background-color: #f5f5f5;
+        transform: scale(1.05);
       }
 
       &.menu-open {
         i {
-          transform: rotate(180deg);
-        }
-
-        &::before {
-          width: 40px;
-          height: 40px;
-          background: rgba(1, 64, 126, 0.1);
+          transform: rotate(90deg);
         }
       }
     }
@@ -408,77 +325,40 @@
 
   // Mobile Navigation Menu
   .mobile-nav {
-    position: absolute;
-    top: 100%;
+    position: relative;
+    top: 0;
     left: 0;
     width: 100%;
     background: #ffffff;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-    z-index: 999;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    z-index: 1000;
     display: block;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     @media (min-width: 993px) {
       display: none;
-    }
-
-    &.menu-open {
-      max-height: 500px;
     }
 
     .mobile-nav-list {
       list-style: none;
       padding: 0;
       margin: 0;
-      transform: translateY(-20px);
-      opacity: 0;
-      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
-    &.menu-open .mobile-nav-list {
-      transform: translateY(0);
-      opacity: 1;
     }
 
     .mobile-nav-item {
-      padding: 16px 24px;
+      padding: 12px 24px;
       border-bottom: 1px solid #f0f0f0;
-      transition: all 0.3s ease;
-      transform: translateX(-20px);
-      opacity: 0;
-
-      @for $i from 1 through 10 {
-        &:nth-child(#{$i}) {
-          transition-delay: $i * 0.05s;
-        }
-      }
-
-      .mobile-nav.menu-open & {
-        transform: translateX(0);
-        opacity: 1;
-      }
 
       &:last-child {
         border-bottom: none;
-        padding: 20px 24px 16px;
+        padding: 20px 24px 12px;
       }
 
       @media (max-width: 480px) {
-        padding: 14px 16px;
+        padding: 10px 16px;
 
         &:last-child {
-          padding: 18px 16px 14px;
-        }
-      }
-
-      &:hover {
-        background-color: #f8f9fa;
-        padding-left: 28px;
-
-        @media (max-width: 480px) {
-          padding-left: 20px;
+          padding: 16px 16px 10px;
         }
       }
     }
@@ -492,8 +372,7 @@
       color: #070707;
       text-decoration: none;
       display: block;
-      transition: all 0.3s ease;
-      position: relative;
+      transition: color 0.3s ease;
 
       @media (max-width: 768px) {
         font-size: 18px;
@@ -503,36 +382,8 @@
         font-size: 16px;
       }
 
-      &::before {
-        content: "";
-        position: absolute;
-        left: -10px;
-        top: 50%;
-        width: 6px;
-        height: 6px;
-        background: linear-gradient(90deg, #01407e 30.77%, #0074e4 100%);
-        border-radius: 50%;
-        transform: translateY(-50%) scale(0);
-        transition: transform 0.3s ease;
-      }
-
       &:hover {
         color: #0074e4;
-        padding-left: 20px;
-
-        &::before {
-          transform: translateY(-50%) scale(1);
-        }
-      }
-
-      &.active {
-        color: #0074e4;
-        font-weight: 600;
-        padding-left: 20px;
-
-        &::before {
-          transform: translateY(-50%) scale(1);
-        }
       }
     }
 
@@ -554,38 +405,16 @@
       font-size: 16px;
       line-height: 150%;
       color: #ffffff;
-      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      position: relative;
-      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
 
       @media (max-width: 480px) {
         font-size: 14px;
         padding: 10px 20px;
       }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.2),
-          transparent
-        );
-        transition: left 0.7s ease;
-      }
-
       &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-
-        &::before {
-          left: 100%;
-        }
+        transform: translateY(-1px);
+        box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
       }
 
       &:active {
@@ -593,41 +422,6 @@
         box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
       }
     }
-  }
-}
-
-// Animation keyframes
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
@@ -668,14 +462,6 @@
 
   .menu-toggle-btn {
     order: 2;
-  }
-
-  .logo {
-    transform-origin: right center;
-
-    &:hover {
-      transform: scale(1.05) translateX(-5px);
-    }
   }
 }
 
@@ -721,23 +507,9 @@
   }
 }
 
-// Sticky header functionality
-.sticky-header {
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    animation: slideDown 0.5s ease forwards;
-  }
-
-  // Add padding to body to compensate for fixed header
-  body {
-    padding-top: 97px;
-
-    @media (max-width: 768px) {
-      padding-top: 80px;
-    }
-  }
+.nav-link.active,
+.mobile-nav-link.active {
+  color: #0074e4; // highlight color
+  font-weight: 600;
+  border-bottom: 2px solid #0074e4; // optional underline
 }

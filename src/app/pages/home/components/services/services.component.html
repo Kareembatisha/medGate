@@ -1,12 +1,11 @@
 <section class="services-section" [dir]="direction">
   <div class="container">
     <div class="header">
-      <h2
-        appScrollAnimate
-        animationClass="animate__fadeInUp"
-        animationDelay="0s"
-      >
-        {{ "SERVICES.OUR_SERVICES" | translate }}
+      <h2>
+        {{ "SERVICES.OUR" | translate }}
+        <span style="color: #3da53d">
+          {{ "SERVICES.SERVICES" | translate }}
+        </span>
       </h2>
       <p
         appScrollAnimate
@@ -41,19 +40,12 @@
             </div>
           </div>
 
-          <div class="card-back">
+          <div class="card-back" [routerLink]="['/services', service.id]">
             <div class="geometric-shapes"></div>
             <div class="card-content">
               <p class="flip-description">
                 {{ service.flipDescription | translate }}
               </p>
-              <a
-                [routerLink]="['/services', service.id]"
-                class="read-more flip"
-              >
-                {{ "COMMON.READ_MORE" | translate }}
-                <span class="arrow-icon"></span>
-              </a>
             </div>
           </div>
         </div>

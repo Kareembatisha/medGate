@@ -3,7 +3,12 @@
     <div class="navbar-content">
       <!-- Logo -->
       <div class="logo-container">
-        <img src="assets/medGatelogo.PNG" alt="IA MEOGATE Logo" class="logo" [routerLink]="'/'" />
+        <img
+          src="assets/medGatelogo.PNG"
+          alt="IA MEOGATE Logo"
+          class="logo"
+          [routerLink]="'/'"
+        />
       </div>
 
       <!-- Desktop Navigation -->
@@ -41,12 +46,10 @@
           </button>
         </div>
       </div>
-      <!-- Desktop Contact Button -->
       <button
         class="contact-btn"
         *ngIf="!isMobileView"
         [routerLink]="'/contact-us'"
-        routerLinkActive="active"
       >
         {{ "HEADER.CONTACT" | translate }}
       </button>
@@ -98,12 +101,7 @@
           </a>
         </li>
         <li class="mobile-nav-item">
-          <button
-            class="mobile-contact-btn"
-            [routerLink]="'/contact-us'"
-            routerLinkActive="active"
-            (click)="closeMenu()"
-          >
+          <button class="mobile-contact-btn" [routerLink]="'/contact-us'">
             {{ "HEADER.CONTACT" | translate }}
           </button>
         </li>

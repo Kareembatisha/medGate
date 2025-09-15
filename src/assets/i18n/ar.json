@@ -87,7 +87,8 @@
   },
   "SERVICES": {
     "SERVICE_DETAILS": "تفاصيل الخدمة",
-    "OUR_SERVICES": "خدماتنا",
+    "OUR": "",
+    "SERVICES": "خدماتنا",
     "COMPREHENSIVE_SOLUTIONS": "حلول شاملة تغطي جميع احتياجاتك",
     "VIEW_SERVICES": "عرض الخدمات",
     "MEDICAL_DEVICE_MARKETING_AUTH": "تفويض تسويق الأجهزة الطبية (MDMA)",
