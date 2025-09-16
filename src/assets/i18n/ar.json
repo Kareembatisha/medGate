@@ -86,6 +86,7 @@
     "IMAGE_ALT": "صورة قسم الخدمات"
   },
   "SERVICES": {
+    "CTA_TEXT": "ابدأ الآن",
     "SERVICE_DETAILS": "تفاصيل الخدمة",
     "OUR": "",
     "SERVICES": "خدماتنا",
@@ -138,7 +139,8 @@
       "MESSAGE": "الرسالة",
       "MESSAGE_PLACEHOLDER": "اكتب رسالتك...",
       "TERMS": "أوافق على الشروط",
-      "SEND": "إرسال"
+      "SEND": "إرسال",
+      "ACCEPT_TERMS": "أوافق على الشروط والأحكام"
     }
   },
   "faq": {

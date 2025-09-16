@@ -14,17 +14,7 @@ import { Router } from '@angular/router';
 export class DiscoverMedgateComponent {
   constructor(private router: Router) {}
 
-  // Optional: Handle video play functionality
-  onPlayVideo() {
-    // Add video play logic here
-    console.log('Play video clicked');
-  }
 
-  // Optional: Handle register button click
-  onRegister() {
-    // Add register logic here
-    console.log('Register button clicked');
-  }
   goToContact() {
     this.router.navigate(['/contact-us']);
   }

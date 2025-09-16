@@ -214,7 +214,7 @@
               contactForm.get('acceptTerms')?.invalid
             "
           />
-          <label for="acceptTerms">{{
+          <label class="mx-2" for="acceptTerms">{{
             "CONTACT.FORM.TERMS" | translate
           }}</label>
           <div
@@ -222,7 +222,7 @@
               contactForm.get('acceptTerms')?.touched &&
               contactForm.get('acceptTerms')?.invalid
             "
-            class="error-message"
+            class="error-message "
           >
             {{ "CONTACT.FORM.ACCEPT_TERMS" | translate }}
           </div>
