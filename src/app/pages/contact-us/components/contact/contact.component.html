@@ -199,35 +199,6 @@
           </div>
         </div>
 
-        <div
-          class="checkbox-group"
-          appScrollAnimate
-          animationClass="animate__fadeInUp"
-          animationDelay="0.9s"
-        >
-          <input
-            type="checkbox"
-            id="acceptTerms"
-            formControlName="acceptTerms"
-            [class.invalid]="
-              contactForm.get('acceptTerms')?.touched &&
-              contactForm.get('acceptTerms')?.invalid
-            "
-          />
-          <label class="mx-2" for="acceptTerms">{{
-            "CONTACT.FORM.TERMS" | translate
-          }}</label>
-          <div
-            *ngIf="
-              contactForm.get('acceptTerms')?.touched &&
-              contactForm.get('acceptTerms')?.invalid
-            "
-            class="error-message "
-          >
-            {{ "CONTACT.FORM.ACCEPT_TERMS" | translate }}
-          </div>
-        </div>
-
         <button
           type="submit"
           class="submit-btn"
