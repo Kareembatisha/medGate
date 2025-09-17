@@ -15,8 +15,8 @@
   },
   "FOOTER": {
     "ADDRESS": "Address:",
-    "ADDRESS_DETAILS": "Level 1, 12 Sample St, Sydney NSW 2000",
-    "PHONE": "1800 123 4567",
+    "ADDRESS_DETAILS": "Office No.6, 6th Floor, Al Rossais Commercial Center – Al Olaya, Riyadh 12211",
+    "PHONE": "920013760",
     "EMAIL": "info@telume.io",
 
     "HOME": {
@@ -124,8 +124,8 @@
     "US": "us",
     "DESCRIPTION": "Please fill out the form or contact us directly via:",
     "EMAIL": "hellorelume.io",
-    "PHONE": "+1 (555) 000-0000",
-    "ADDRESS": "123 Sample St, Sydney NSW 2000 AU",
+    "PHONE": "920013760",
+    "ADDRESS": "Office No.6, 6th Floor, Al Rossais Commercial Center – Al Olaya, Riyadh 12211",
     "IMAGE_ALT": "Contact Us Image",
     "FORM": {
       "NAME": "Name",
@@ -140,9 +140,13 @@
       "MESSAGE_PLACEHOLDER": "Type your message...",
       "TERMS": "I accept the Terms",
       "SEND": "Send",
-      "ACCEPT_TERMS": "I accept the terms and conditions"
+      "ACCEPT_TERMS": "I accept the terms and conditions",
+      "REQUIRED": "This field is required",
+      "CONTACT.FORM.REQUIRED": "This field is required",
+      "CONTACT_FORM_REQUIRED": "This field is required"
     }
   },
+
   "faq": {
     "question1": "What documents are needed for Saudi FDA Registration for Medical Devices?",
     "answer1": "Saudi Food and Drug Authority (SFDA) requires a complete technical file for the medical device consisting mainly of the product's detailed description, design & manufacturing process, verification & validation of essential principles of safety and performance, risk management, quality management system, and post-market surveillance.",

@@ -21,10 +21,6 @@ export class ContactService {
   constructor(private http: HttpClient) {}
 
   sendMessage(contactData: ContactRequest): Observable<any> {
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-    });
-
     return this.http.post<any>(this.apiUrl, contactData).pipe(
       catchError((error) => {
         console.error('Send message failed:', error);
