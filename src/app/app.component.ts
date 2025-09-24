@@ -12,13 +12,5 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'MedGate';
   
-  // Global loader signal
-  loading = signal(true);
-
-  constructor() {
-    // Simulate initial app loading time
-    setTimeout(() => {
-      this.loading.set(false);
-    }, 2000); // You can adjust this timing as needed
-  }
+  
 }

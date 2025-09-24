@@ -1,4 +1,11 @@
 /* Global font settings */
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+
 body,
 html {
   font-family: "Roboto", sans-serif;

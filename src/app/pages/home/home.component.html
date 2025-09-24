@@ -1,17 +1,23 @@
-<!-- Hero Section: Main banner or introduction -->
-<app-hero-section></app-hero-section>
+<ng-container *ngIf="loading; else homeContent">
+  <app-loader></app-loader>
+</ng-container>
 
-<!-- Services Section: List of services offered -->
-<app-services></app-services>
+<ng-template #homeContent>
+  <!-- Hero Section: Main banner or introduction -->
+  <app-hero-section></app-hero-section>
 
-<!-- Why MedGate Section: Reasons to choose MedGate -->
-<app-why-medgate></app-why-medgate>
+  <!-- Services Section: List of services offered -->
+  <app-services></app-services>
 
-<!-- Our Partners Section: Partner logos and affiliations -->
-<app-our-partners></app-our-partners>
+  <!-- Why MedGate Section: Reasons to choose MedGate -->
+  <app-why-medgate></app-why-medgate>
 
-<!-- Discover MedGate Section: Overview of MedGate platform -->
-<app-discover-medgate></app-discover-medgate>
+  <!-- Our Partners Section: Partner logos and affiliations -->
+  <app-our-partners></app-our-partners>
 
-<!-- Get Started Section: Call-to-action for registration -->
-<app-get-started></app-get-started>
+  <!-- Discover MedGate Section: Overview of MedGate platform -->
+  <app-discover-medgate></app-discover-medgate>
+
+  <!-- Get Started Section: Call-to-action for registration -->
+  <app-get-started></app-get-started>
+</ng-template>

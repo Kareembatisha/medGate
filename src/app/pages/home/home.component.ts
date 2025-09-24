@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { LoaderComponent } from '../../shared/components/loader/loader.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { ServicesComponent } from './components/services/services.component';
 import { WhyMedgateComponent } from './components/why-medgate/why-medgate.component';
@@ -10,6 +12,8 @@ import { GetStartedComponent } from './components/get-started/get-started.compon
   selector: 'app-home',
   standalone: true,
   imports: [
+    CommonModule,
+    LoaderComponent,
     HeroSectionComponent,
     ServicesComponent,
     WhyMedgateComponent,
@@ -20,4 +24,12 @@ import { GetStartedComponent } from './components/get-started/get-started.compon
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  loading = true;
+
+  constructor() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500); // show loader for 1.5 sec
+  }
+}
