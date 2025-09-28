@@ -1,3 +1,5 @@
+// Add to contact.component.scss
+
 body {
   font-family: "Roboto", sans-serif;
   color: #000000;
@@ -112,7 +114,6 @@ body {
   max-width: 100%;
   height: auto;
 }
-
 
 /* Right content */
 .right-content {
@@ -241,6 +242,8 @@ body {
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
+  position: relative;
+  min-height: 52px;
 }
 
 .submit-btn:hover:not(:disabled) {
@@ -254,6 +257,28 @@ body {
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
+}
+
+/* Loading state styles */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 2px solid #ffffff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 /* Responsive design */

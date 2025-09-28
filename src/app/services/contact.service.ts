@@ -16,7 +16,7 @@ export interface ContactRequest {
   providedIn: 'root',
 })
 export class ContactService {
-  private apiUrl = `${environment.apiUrl}/message`;
+  private apiUrl = `${environment.apiUrl}`;
 
   constructor(private http: HttpClient) {}
 

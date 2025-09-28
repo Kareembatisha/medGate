@@ -205,9 +205,13 @@
           appScrollAnimate
           animationClass="animate__fadeInUp"
           animationDelay="1s"
-          [disabled]="contactForm.invalid"
+          [disabled]="contactForm.invalid || isLoading"
         >
-          {{ "CONTACT.FORM.SEND" | translate }}
+          <span *ngIf="!isLoading">{{ "CONTACT.FORM.SEND" | translate }}</span>
+          <div *ngIf="isLoading" class="loading-container">
+            <div class="spinner"></div>
+            <span>{{ "CONTACT.FORM.SENDING" | translate }}</span>
+          </div>
         </button>
       </form>
     </div>
