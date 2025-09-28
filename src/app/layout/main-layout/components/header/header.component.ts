@@ -54,11 +54,24 @@ export class HeaderComponent {
   switchLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = lang;
+
+    // Set document direction - all new languages are LTR (left-to-right)
+    document.documentElement.dir = 'ltr';
+
+    // Set appropriate language code for HTML lang attribute
+    const langMap: { [key: string]: string } = {
+      en: 'en',
+      zh: 'zh-CN', // Simplified Chinese
+      de: 'de', // German
+      fr: 'fr', // French
+    };
+
+    document.documentElement.lang = langMap[lang] || lang;
   }
 
+  // Since Arabic is removed, RTL is no longer needed
+  // Keeping this for compatibility but it will always return false
   get isRTL(): boolean {
-    return this.currentLang === 'ar';
+    return false;
   }
 }

@@ -1,0 +1,237 @@
+{
+  "HEADER": {
+    "HOME": "Accueil",
+    "SERVICES": "Services",
+    "SOLUTIONS": "Solutions",
+    "ABOUT": "À propos",
+    "FAQS": "FAQ",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "HEADING_PART2": " votre passerelle vers l'enregistrement et la commercialisation de dispositifs médicaux en Arabie Saoudite",
+    "TEXT": "Nous aidons les fabricants et distributeurs à accéder au marché saoudien avec confiance, rapidité et conformité totale aux exigences SFDA.",
+    "BUTTON": "Commencer maintenant",
+    "IMAGE_ALT": "Illustration d'enregistrement de dispositif médical"
+  },
+  "FOOTER": {
+    "ADDRESS": "Adresse :",
+    "ADDRESS_DETAILS": "Bureau N°6, 6ème étage, Al Rossais Commercial Center – Al Olaya, Riyad 12211",
+    "PHONE": "920013760",
+    "EMAIL": "info@sadeemmedical.com",
+
+    "HOME": {
+      "TITLE": "Accueil",
+      "LINK1": "Accueil",
+      "LINK2": "Nos services",
+      "LINK3": "Pourquoi MedGate",
+      "LINK4": "Nous contacter",
+      "LINK5": "CAT"
+    },
+
+    "ABOUT": {
+      "TITLE": "À propos de nous",
+      "LINK1": "Services",
+      "LINK2": "Solutions",
+      "LINK3": "À propos de nous",
+      "LINK4": "FAQ"
+    },
+
+    "SUBSCRIBE": {
+      "TITLE": "Entrez votre email",
+      "PLACEHOLDER": "Adresse email",
+      "BUTTON": "S'abonner",
+      "NOTE": "En vous abonnant, vous acceptez notre Politique de confidentialité",
+      "SUCCESS_TITLE": "Abonné !",
+      "SUCCESS_MSG": "Vous vous êtes abonné avec succès 🎉",
+      "ERROR_TITLE": "Email invalide",
+      "ERROR_MSG": "Veuillez saisir une adresse email valide.",
+      "OK": "OK"
+    },
+
+    "COPYRIGHT": "© 2025 MedGate. Tous droits réservés.",
+    "LEGAL": {
+      "PRIVACY": "Politique de confidentialité",
+      "TERMS": "Conditions d'utilisation",
+      "COOKIES": "Paramètres des cookies"
+    }
+  },
+  "WHY_MEDGATE": {
+    "WHY": "Pourquoi",
+    "MEDGATE": "MedGate ?",
+    "SUBTITLE": "Nous donnons aux entreprises de dispositifs médicaux les moyens d'entrer et de croître avec confiance sur le marché saoudien grâce à des conseils d'experts et à la conformité réglementaire.",
+    "CARD_1_TITLE": "Spécialistes des réglementations saoudiennes et internationales.",
+    "CARD_1_DESC": "Nous combinons notre expertise locale avec une connaissance complète des réglementations SFDA, vous aidant à aligner vos dispositifs sur les normes SFDA et internationales.",
+    "CARD_2_TITLE": "Solutions rapides et sur mesure pour chaque produit",
+    "CARD_2_DESC": "Que vous lanciez un dispositif simple ou un système à haut risque, nous fournissons des stratégies personnalisées pour vous faire gagner du temps et des ressources.",
+    "CARD_3_TITLE": "Support bilingue Arabe / Anglais",
+    "CARD_3_DESC": "Une communication claire dans les deux langues garantit que rien ne se perd dans la traduction, de la documentation aux soumissions réglementaires.",
+    "CARD_4_TITLE": "Support continu de l'approbation à la surveillance post-commercialisation.",
+    "CARD_4_DESC": "Nous ne nous arrêtons pas aux approbations ; nous restons avec vous pour gérer les renouvellements, la conformité et les rapports après la commercialisation de votre produit."
+  },
+  "DISCOVER_MEDGATE": {
+    "TITLE_PART1": "Découvrez ",
+    "DESCRIPTION": "Voyez comment MedGate aide les entreprises de dispositifs médicaux à naviguer dans les exigences SFDA, obtenir des approbations rapides et apporter des innovations en toute sécurité sur le marché saoudien.",
+    "REGISTER_BTN": "S'inscrire maintenant"
+  },
+  "GET_STARTED": {
+    "TITLE": "Commencez aujourd'hui",
+    "DESCRIPTION": "Commencez votre parcours d'enregistrement de dispositifs médicaux avec MedGate et débloquez le marché saoudien plus rapidement, plus sûrement et en totale conformité.",
+    "BUTTON": "S'inscrire maintenant"
+  },
+  "SERVICE_HERO": {
+    "HEADING": "Découvrez des services réglementaires sans faille",
+    "SUBTITLE": "Votre passerelle vers le marché de la santé saoudien",
+    "DESCRIPTION": "Medgate sert de point d'entrée vers le marché de la santé saoudien, tirant parti d'une vaste expertise pour fournir une large gamme de solutions aux fabricants de dispositifs médicaux et de DIV. Notre mission est de faciliter une entrée sur le marché fluide et efficace tout en assurant la conformité aux réglementations locales et aux normes internationales.",
+    "START_NOW": "Commencer maintenant",
+    "IMAGE_ALT": "Image héros de service"
+  },
+  "SERVICES": {
+    "SERVICE_DETAILS": "Détails du service",
+    "OUR": "Nos",
+    "SERVICES": "Services",
+    "COMPREHENSIVE_SOLUTIONS": "Solutions complètes qui couvrent tous vos besoins",
+    "VIEW_SERVICES": "Voir les services",
+    "MEDICAL_DEVICE_MARKETING_AUTH": "Autorisation de commercialisation de dispositifs médicaux (MDMA)",
+    "UNIQUE_DEVICE_IDENTIFICATION": "Identification unique de dispositif (UDI)",
+    "NCMDR": "Centre national de signalement des dispositifs médicaux (NCMDR)",
+    "IMPORTATION_DISTRIBUTION": "Licence d'importation et de distribution",
+    "AUTHORIZED_REPRESENTATIVE": "Licence de représentant autorisé (AR)",
+    "PRODUCT_CLASSIFICATION_SYSTEM": "Système de classification des produits (PCS)",
+    "CLASSIFICATION_DESCRIPTION": "Classification des dispositifs médicaux pour déterminer avec précision les exigences d'enregistrement",
+    "MEDICAL_DEVICE_MARKETING_AUTH_DESC": "Obtenez l'autorisation officielle SFDA pour commercialiser vos dispositifs médicaux et DIV en Arabie Saoudite. Notre équipe aide à préparer un dossier technique solide, à soumettre via le portail GHAD et à naviguer dans les étapes d'examen incluant l'évaluation des risques, la conformité réglementaire et la documentation clinique—assurant que votre produit se lance de manière fluide et efficace",
+    "UNIQUE_DEVICE_IDENTIFICATION_DESC": "Établissez la traçabilité et améliorez la sécurité des patients en implémentant un système UDI conforme. Nous vous aidons à générer des codes de dispositifs standardisés mondialement, à les intégrer dans l'infrastructure de suivi SFDA et à assurer une visibilité transparente à travers la chaîne d'approvisionnement et la surveillance post-commercialisation",
+    "NCMDR_DESC": "Maintenez la conformité réglementaire avec une surveillance post-commercialisation approfondie via NCMDR. Nous soutenons le signalement d'incidents, l'escalade d'événements indésirables et la coordination de rappels, travaillant directement avec la SFDA et les acteurs de santé pour assurer une résolution rapide, une documentation précise et une sécurité produit soutenue",
+    "IMPORTATION_DISTRIBUTION_DESC": "Sécurisez les permis légaux requis pour importer et distribuer des dispositifs médicaux en Arabie Saoudite. MedGate vous aide à préparer des dossiers d'importation, à gérer le dédouanement et à répondre aux exigences SFDA—permettant un accès au marché fluide grâce à une logistique rapide et conforme",
+    "AUTHORIZED_REPRESENTATIVE_DESC": "Nommez MedGate comme votre représentant réglementaire officiel en Arabie Saoudite. Nous gérons la documentation, l'authentification et les endossements d'ambassade saoudienne selon les besoins, assurant une conformité complète pré et post-commercialisation. Avec notre licence AR, votre entreprise gagne en visibilité légale, crédibilité réglementaire et communication sans tracas avec la SFDA",
+    "PRODUCT_CLASSIFICATION_SYSTEM_DESC": "Clarifiez votre chemin réglementaire avec une classification de produit précise. Basé sur les critères de la FDA saoudienne, nous évaluons la classe de risque, l'invasivité et l'usage prévu de votre dispositif pour déterminer les exigences d'approbation exactes—rationalisant votre stratégie d'enregistrement et évitant les erreurs de classification coûteuses",
+    "MEDICAL_DEVICE_MARKETING_AUTH_LONG_DESC": "est l'approbation officielle délivrée par l'Autorité saoudienne des aliments et des médicaments (SFDA) qui permet aux entreprises de commercialiser et vendre leurs dispositifs médicaux et diagnostics in vitro (DIV) en Arabie Saoudite. L'obtention d'une MDMA implique un processus réglementaire structuré qui assure que votre produit respecte les normes nationales et internationales de sécurité, performance et qualité. Chez MedGate, nous fournissons un support de bout en bout tout au long de ce parcours : préparation de la documentation technique requise, compilation de rapports de gestion des risques et d'évaluation clinique, et soumission de dossiers complets via le portail GHAD de la SFDA. Nos experts font le lien avec les régulateurs, traitent les questions et surveillent les progrès d'examen en votre nom. Cela minimise les retards, réduit les risques de conformité et accélère le délai de mise sur le marché—vous permettant d'introduire en toute confiance vos produits dans le secteur de la santé saoudien",
+    "UNIQUE_DEVICE_IDENTIFICATION_LONG_DESC": "système est une pierre angulaire de la traçabilité des dispositifs médicaux et de la sécurité des patients. Chaque dispositif se voit attribuer un code reconnu mondialement qui permet aux régulateurs, fournisseurs de soins de santé et acteurs de la chaîne d'approvisionnement d'identifier des informations clés sur le produit à chaque étape de son cycle de vie. Cela améliore le suivi des dispositifs, renforce l'efficacité des rappels et fournit de la transparence pour les patients et les professionnels de santé. MedGate aide les entreprises à aligner leurs systèmes UDI avec les exigences SFDA en générant des identifiants de dispositifs conformes, en les intégrant dans les étiquettes et emballages, et en les enregistrant dans les bases de données nationales pertinentes. Notre équipe assure une harmonisation complète avec les normes internationales telles que GS1, HIBCC ou ICCBBA, tout en répondant aux exigences réglementaires spécifiques du marché saoudien. Ce service non seulement renforce la conformité mais favorise aussi la confiance avec les fournisseurs de soins de santé et utilisateurs finaux",
+    "NCMDR_LONG_DESC": "est une plateforme de surveillance post-commercialisation établie par la SFDA pour améliorer la sécurité des patients et surveiller les performances des dispositifs dans des environnements réels. Les fabricants, importateurs et établissements de santé sont tenus de signaler les événements indésirables, plaintes de produits et actions correctives de sécurité sur le terrain via ce système. MedGate fournit un support complet pour toutes vos obligations NCMDR. Nous vous aidons à établir des systèmes de signalement efficaces, à rédiger et soumettre des rapports d'incidents, et à gérer la communication avec les régulateurs. De plus, nous offrons des conseils pour l'analyse des causes profondes, les actions correctives et préventives (CAPA) et la gestion des rappels. En assurant un signalement opportun et précis, MedGate vous aide à maintenir la conformité, protéger la réputation de votre entreprise et sauvegarder la santé des patients sur le marché saoudien",
+    "IMPORTATION_DISTRIBUTION_LONG_DESC": "Avant que les dispositifs médicaux puissent être placés sur le marché saoudien, les entreprises doivent obtenir une Licence d'importation et de distribution de la SFDA. Cette licence autorise légalement les entreprises à apporter des dispositifs dans le pays et à les distribuer aux fournisseurs de soins de santé. Sans elle, les entreprises font face à des restrictions réglementaires, des retards d'expédition et des pénalités potentielles. MedGate simplifie ce processus complexe de licence. Nous aidons à préparer et soumettre les documents d'application requis, incluant l'enregistrement d'entreprise, la conformité des installations et les certifications de gestion de la qualité. Notre équipe fournit aussi des conseils sur les procédures de dédouanement et assure que vos pratiques d'importation et distribution restent entièrement conformes aux normes SFDA. Avec MedGate, vous gagnez un partenaire fiable qui permet une entrée sur le marché fluide, minimise les obstacles réglementaires et assure un flux régulier de dispositifs vers les institutions de santé",
+    "AUTHORIZED_REPRESENTATIVE_LONG_DESC": "Les fabricants étrangers qui souhaitent commercialiser des dispositifs médicaux en Arabie Saoudite sont tenus par la loi de nommer un Représentant autorisé (AR) local. L'AR sert de liaison officielle entre le fabricant et la SFDA, assumant la responsabilité de la conformité réglementaire pré et post-commercialisation, du signalement d'incidents et de la communication avec les autorités sanitaires. En tant que votre Représentant autorisé, MedGate assure que vos dispositifs répondent à toutes les obligations réglementaires SFDA sans nécessiter votre présence physique dans le Royaume. Nous gérons la documentation, traitons les processus d'enregistrement, authentifions les accords légaux et supervisons la communication avec les régulateurs. De plus, nous aidons avec la surveillance post-commercialisation, les rapports de vigilance et la gestion des rappels si nécessaire. Avec MedGate comme votre AR de confiance, vous pouvez étendre en toute confiance vers le marché saoudien, sachant que vos responsabilités de conformité et réglementaires sont entre des mains expertes",
+    "PRODUCT_CLASSIFICATION_SYSTEM_LONG_DESC": "est une première étape critique pour déterminer les exigences réglementaires pour l'enregistrement de dispositifs médicaux. Les dispositifs sont classifiés en différentes catégories de risque basées sur leur usage prévu, invasivité, durée de contact avec le corps humain et profil de sécurité global. Une classification correcte assure que la voie d'approbation appropriée soit suivie, tandis qu'une mauvaise classification peut mener à des retards coûteux ou des rejets réglementaires. Chez MedGate, nous aidons les fabricants et distributeurs à classifier avec précision leurs dispositifs médicaux en ligne avec les réglementations SFDA. Nos experts évaluent les spécifications de produit, les comparent avec les références internationales et fournissent une stratégie de classification détaillée qui clarifie toutes les exigences de soumission nécessaires. En vous guidant à travers PCS, nous permettons un processus d'enregistrement plus fluide et plus rapide, réduisons les risques de conformité et assurons que votre dispositif soit correctement positionné sur le marché de santé saoudien",
+    "CTA_TEXT": "Commencer"
+  },
+  "BACK_TO_SERVICES": "Retour aux services",
+  "COMMON": {
+    "READ_MORE": "Lire plus"
+  },
+  "FAQs": "FAQ",
+  "Contact Us": "Nous contacter",
+  "CONTACT": {
+    "SUBHEADING": "Commencez à nous contacter maintenant.",
+    "TITLE": "Nous",
+    "US": "contacter",
+    "DESCRIPTION": "Veuillez remplir le formulaire ou nous contacter directement via :",
+    "EMAIL": "info@sadeemmedical.com",
+    "PHONE": "920013760",
+    "ADDRESS": "Bureau N°6, 6ème étage, Al Rossais Commercial Center – Al Olaya, Riyad 12211",
+    "IMAGE_ALT": "Image de contact",
+    "FORM": {
+      "NAME": "Nom",
+      "NAME_PLACEHOLDER": "Tapez votre nom...",
+      "NUMBER": "Numéro",
+      "NUMBER_PLACEHOLDER": "Tapez votre numéro...",
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "Tapez votre email...",
+      "COMPANY": "Nom de l'entreprise",
+      "COMPANY_PLACEHOLDER": "Tapez le nom de votre entreprise...",
+      "MESSAGE": "Message",
+      "MESSAGE_PLACEHOLDER": "Tapez votre message...",
+      "TERMS": "J'accepte les conditions",
+      "SEND": "Envoyer",
+      "ACCEPT_TERMS": "J'accepte les termes et conditions",
+      "REQUIRED": "Ce champ est requis",
+      "CONTACT.FORM.REQUIRED": "Ce champ est requis",
+      "CONTACT_FORM_REQUIRED": "Ce champ est requis"
+    }
+  },
+
+  "faq": {
+    "question1": "Quels documents sont nécessaires pour l'enregistrement FDA saoudien pour les dispositifs médicaux ?",
+    "answer1": "L'Autorité saoudienne des aliments et des médicaments (SFDA) exige un dossier technique complet pour le dispositif médical composé principalement de la description détaillée du produit, du processus de conception et de fabrication, de la vérification et validation des principes essentiels de sécurité et de performance, de la gestion des risques, du système de gestion de la qualité et de la surveillance post-commercialisation.",
+
+    "question2": "Que faut-il pour être éligible à commencer le processus d'enregistrement pour les dispositifs médicaux avec l'Autorité saoudienne des aliments et des médicaments (SFDA) ?",
+    "answer2": "Les fabricants étrangers sont tenus de nommer un Représentant autorisé (AR) pour pouvoir postuler à l'enregistrement de leur dispositif médical. Les fabricants locaux sont tenus d'obtenir une licence de fabrication de dispositifs médicaux de la FDA saoudienne pour postuler à l'enregistrement.",
+
+    "question3": "Combien de temps l'enregistrement FDA saoudien est-il valide, et quand peut-il être renouvelé ?",
+    "answer3": "La licence d'enregistrement Autorisation de commercialisation de dispositifs médicaux (MDMA) est valide pendant 3 ans et peut être renouvelée tous les trois ans.",
+
+    "question4": "Quand pouvons-nous commencer le processus de renouvellement de la licence d'Autorisation de commercialisation de dispositifs médicaux (MDMA) ?",
+    "answer4": "Vous pouvez initier le processus de renouvellement avec la FDA saoudienne 90 jours avant la date d'expiration de la licence.",
+
+    "question5": "Combien de distributeurs pouvons-nous avoir ?",
+    "answer5": "Il n'y a pas de limite au nombre de distributeurs qui peuvent commercialiser le produit après l'obtention de la licence MDMA.",
+
+    "question6": "Comment la FDA saoudienne classifie-t-elle le risque des dispositifs médicaux ?",
+    "answer6": "La FDA saoudienne a identifié 22 règles pour les dispositifs médicaux et 7 règles pour les dispositifs de diagnostic in vitro (DIV) dans MDS-G008 pour déterminer la classe de risque des produits. Cela dépend principalement de la durée d'utilisation et de l'invasivité du produit pour le corps humain.",
+
+    "question7": "Quels sont les frais pour l'enregistrement FDA saoudien des dispositifs médicaux ?",
+    "answer7": "Les frais d'enregistrement FDA saoudien sont basés sur la classification de risque du produit : Classe A - 15 000 SAR, Classe B - 19 000 SAR, Classe C - 21 000 SAR, Classe D - 23 000 SAR.",
+
+    "question8": "Pouvons-nous changer le Représentant autorisé (AR) ? Cela affectera-t-il les documents d'enregistrement ?",
+    "answer8": "Le fabricant légal a le droit de changer l'AR ou de nommer un nouvel AR. Cela n'aura aucun impact sur les produits enregistrés tant qu'il n'y a pas d'enregistrement en cours.",
+
+    "question9": "Pouvons-nous avoir plus d'un Représentant autorisé (AR) ?",
+    "answer9": "Oui. Cependant, pas pour le même produit.",
+
+    "question10": "La voie d'enregistrement des dispositifs à faible risque est-elle toujours disponible ?",
+    "answer10": "Non, cette route d'enregistrement a été fermée par la FDA saoudienne le 27 septembre 2022.",
+
+    "question11": "Qui peut commercialiser le dispositif médical après enregistrement ?",
+    "answer11": "Tout distributeur licencié par la FDA saoudienne peut commercialiser le dispositif sur le marché saoudien.",
+
+    "question12": "Le distributeur doit-il être notre Représentant autorisé (AR) ?",
+    "answer12": "Les distributeurs des catégories C et D ont l'option d'obtenir le certificat ISO 13485 ou d'être audités par la FDA saoudienne annuellement pour assurer la conformité totale aux exigences ISO 13485.",
+
+    "question13": "Le CE/FDA est-il requis pour l'enregistrement de dispositifs médicaux avec la FDA saoudienne ?",
+    "answer13": "Non. Cependant, ils peuvent être fournis comme preuves de support pendant le processus d'enregistrement.",
+
+    "question14": "Est-il obligatoire pour les distributeurs locaux de détenir le certificat ISO 13485 ?",
+    "answer14": "Oui, les distributeurs locaux des catégories A et B sont tenus d'obtenir un certificat ISO 13485 d'un organisme de certification accrédité SFDA ou IAF.",
+
+    "question15": "Combien d'articles peuvent être inclus dans un certificat MDMA ? Et y a-t-il une considération spécifique pour cela ?",
+    "answer15": "Chaque application MDMA ne peut avoir plus de 50 noms commerciaux enregistrés avec la condition qu'elle doit se conformer aux critères de regroupement SFDA selon l'Annexe (15) de MD5-REQ01.",
+
+    "helpful": "Ce contenu était-il utile ?"
+  },
+  "aboutHero": {
+    "empowering": "Autonomiser",
+    "medical": "l'innovation",
+    "innovation": "médicale en Arabie Saoudite",
+    "subtitle": "MedGate aide les fabricants et distributeurs à apporter des dispositifs médicaux sur le marché saoudien avec confiance, rapidité et conformité SFDA complète."
+  },
+  "about": {
+    "subheading": "À propos de MedGate",
+    "headingPrefix": "À propos de",
+    "headingMedgate": "MedGate",
+    "description": "MedGate est une entreprise spécialisée dans les solutions réglementaires pour les dispositifs médicaux en Arabie Saoudite. Nous guidons les fabricants internationaux et locaux à travers chaque étape du processus d'enregistrement—de la classification et licence à la surveillance post-commercialisation.\n\nAvec une compréhension approfondie des réglementations SFDA et des normes internationales, notre équipe assure un accès au marché transparent et une conformité à long terme. Nous combinons l'expertise technique avec une approche centrée sur le client pour rendre votre parcours vers le marché saoudien plus rapide, plus sûr et plus efficace."
+  },
+  "CAROUSEL-2": {
+    "SLIDE1_LABEL": "Diapositive de vision",
+    "SLIDE2_LABEL": "Diapositive de mission",
+    "SLIDE3_LABEL": "Diapositive de valeurs",
+    "VISION": {
+      "TITLE": "Notre vision",
+      "DESCRIPTION": "Chez MedGate, notre vision est de devenir le partenaire mondial de confiance pour les entreprises de dispositifs médicaux entrant sur le marché de santé saoudien. Nous nous engageons à permettre l'innovation, renforcer la sécurité des patients et aider le Royaume à atteindre ses objectifs de transformation sanitaire."
+    },
+    "MISSION": {
+      "TITLE": "Notre mission",
+      "DESCRIPTION": "Chez MedGate, notre mission est de connecter l'innovation avec la réglementation, assurant que les dispositifs médicaux respectent les normes SFDA et mondiales—afin que les patients reçoivent des technologies sûres plus rapidement et avec confiance."
+    },
+    "PREV": "Précédent",
+    "NEXT": "Suivant"
+  },
+  "LOCATIONS": {
+    "TITLE_OUR": "Nos",
+    "TITLE_LOCATIONS": "Emplacements",
+    "SUBTITLE": "Nous sommes basés en Arabie Saoudite, servant les clients locaux et internationaux avec une expertise réglementaire adaptée à la région. Notre bureau vous connecte directement à l'écosystème SFDA, assurant un support pratique tout au long de votre parcours produit.",
+    "KSA": {
+      "TITLE": "Arabie Saoudite",
+      "ADDRESS": "Riyad, Arabie Saoudite",
+      "IMAGE_ALT": "Emplacement Arabie Saoudite"
+    },
+    "VIEW_MAP": "Voir sur la carte",
+    "MAP_TITLE": "Carte des emplacements de l'entreprise"
+  }
+}

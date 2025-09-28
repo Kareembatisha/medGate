@@ -1,4 +1,4 @@
-<header class="navbar" [class.rtl]="isRTL">
+<header class="navbar">
   <div class="container-fluid">
     <div class="navbar-content">
       <!-- Logo -->
@@ -38,11 +38,25 @@
             EN
           </button>
           <button
-            (click)="switchLanguage('ar')"
-            [class.active]="currentLang === 'ar'"
+            (click)="switchLanguage('zh')"
+            [class.active]="currentLang === 'zh'"
             class="lang-btn"
           >
-            AR
+            中文
+          </button>
+          <button
+            (click)="switchLanguage('de')"
+            [class.active]="currentLang === 'de'"
+            class="lang-btn"
+          >
+            DE
+          </button>
+          <button
+            (click)="switchLanguage('fr')"
+            [class.active]="currentLang === 'fr'"
+            class="lang-btn"
+          >
+            FR
           </button>
         </div>
       </div>
@@ -65,11 +79,25 @@
             EN
           </button>
           <button
-            (click)="switchLanguage('ar')"
-            [class.active]="currentLang === 'ar'"
+            (click)="switchLanguage('zh')"
+            [class.active]="currentLang === 'zh'"
             class="lang-btn"
           >
-            AR
+            中文
+          </button>
+          <button
+            (click)="switchLanguage('de')"
+            [class.active]="currentLang === 'de'"
+            class="lang-btn"
+          >
+            DE
+          </button>
+          <button
+            (click)="switchLanguage('fr')"
+            [class.active]="currentLang === 'fr'"
+            class="lang-btn"
+          >
+            FR
           </button>
         </div>
         <button

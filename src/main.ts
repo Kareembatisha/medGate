@@ -3,7 +3,11 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { AppComponent } from './app/app.component';
 import { appConfig } from './app/app.config';
 import { provideTranslate } from './translate.config';
-import { provideRouter, withInMemoryScrolling, withHashLocation } from '@angular/router';
+import {
+  provideRouter,
+  withInMemoryScrolling,
+  withHashLocation,
+} from '@angular/router';
 import { routes } from './app/app.routes'; // adjust path if needed
 
 bootstrapApplication(AppComponent, {

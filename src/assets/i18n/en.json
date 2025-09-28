@@ -8,7 +8,7 @@
     "CONTACT": "Contact"
   },
   "HERO": {
-    "HEADING": "MedGate your Gateway to medical device registration and marketing in Saudi Arabia",
+    "HEADING_PART2": " your Gateway to medical device registration and marketing in Saudi Arabia",
     "TEXT": "We help manufacturers and distributors access the Saudi market with confidence, speed, and full compliance with SFDA requirements.",
     "BUTTON": "Start Now",
     "IMAGE_ALT": "Medical device registration illustration"
@@ -17,7 +17,7 @@
     "ADDRESS": "Address:",
     "ADDRESS_DETAILS": "Office No.6, 6th Floor, Al Rossais Commercial Center – Al Olaya, Riyadh 12211",
     "PHONE": "920013760",
-    "EMAIL": "info@telume.io",
+    "EMAIL": "info@sadeemmedical.com",
 
     "HOME": {
       "TITLE": "Home",
@@ -69,7 +69,7 @@
     "CARD_4_DESC": "We don't stop at approvals; we stay with you to manage renewals, compliance, and reporting after your product hits the market."
   },
   "DISCOVER_MEDGATE": {
-    "TITLE": "Discover MedGate",
+    "TITLE_PART1": "Discover ",
     "DESCRIPTION": "Watch how MedGate helps medical device companies navigate SFDA requirements, achieve fast approvals, and bring innovations safely to the Saudi market.",
     "REGISTER_BTN": "Register Now"
   },
@@ -123,7 +123,7 @@
     "TITLE": "Contact",
     "US": "us",
     "DESCRIPTION": "Please fill out the form or contact us directly via:",
-    "EMAIL": "hellorelume.io",
+    "EMAIL": "info@sadeemmedical.com",
     "PHONE": "920013760",
     "ADDRESS": "Office No.6, 6th Floor, Al Rossais Commercial Center – Al Olaya, Riyadh 12211",
     "IMAGE_ALT": "Contact Us Image",

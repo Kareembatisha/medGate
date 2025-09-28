@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 72px 68px;
+  padding: 72px 0px;
   gap: 80px;
   width: 100%;
   min-height: 886px;
@@ -55,14 +55,18 @@
         font-weight: 600;
         font-size: 32px;
         line-height: 120%;
-        color: #01407e;
+        color: #000000;
         margin: 0;
 
+        .brand {
+          color: #01407e; /* or your desired blue */
+        }
+
         @media (min-width: 768px) {
-          font-size: 40px;
+          font-size: 32px;
         }
         @media (min-width: 992px) {
-          font-size: 48px;
+          font-size: 32px;
         }
       }
 
@@ -80,7 +84,7 @@
       }
 
       .actions {
-        width: 140px;
+        width: 240px;
         height: 43px;
 
         .custom-button {
@@ -99,7 +103,7 @@
           color: #ffffff;
           cursor: pointer;
           transition: all 0.3s ease;
-
+          padding: 10px 0px;
           &:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

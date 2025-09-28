@@ -20,11 +20,11 @@
     flex: 1 0 auto;
     display: flex;
     justify-content: center;
-
-    .main-container {
-      width: 100%; /* change this width as needed */
-      max-width: 100%; /* content max width */
-    }
+  .main-container {
+    width: 100%;
+    max-width: none; /* remove restriction */
+    padding: 0 20px; /* optional spacing */
+  }
   }
 
   /* Footer */
@@ -39,7 +39,6 @@
     }
   }
 }
-
 
 .header {
   transition: height 0.3s ease;
