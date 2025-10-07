@@ -17,7 +17,7 @@
     "ADDRESS": "地址：",
     "ADDRESS_DETAILS": "6号办公室，6楼，Al Rossais商业中心 – Al Olaya，利雅得 12211",
     "PHONE": "920013760",
-    "EMAIL": "info@sadeemmedical.com",
+    "EMAIL": "info@medgate-solutions.com",
 
     "HOME": {
       "TITLE": "首页",
@@ -123,7 +123,7 @@
     "TITLE": "联系",
     "US": "我们",
     "DESCRIPTION": "请填写表格或直接通过以下方式联系我们：",
-    "EMAIL": "info@sadeemmedical.com",
+    "EMAIL": "info@medgate-solutions.com",
     "PHONE": "920013760",
     "ADDRESS": "6号办公室，6楼，Al Rossais商业中心 – Al Olaya，利雅得 12211",
     "IMAGE_ALT": "联系我们图片",
@@ -144,7 +144,8 @@
       "ACCEPT_TERMS": "我接受条款和条件",
       "REQUIRED": "此字段为必填项",
       "CONTACT.FORM.REQUIRED": "此字段为必填项",
-      "CONTACT_FORM_REQUIRED": "此字段为必填项"
+      "CONTACT_FORM_REQUIRED": "此字段为必填项",
+      "INVALID_EMAIL": "请输入有效的电子邮件地址"
     }
   },
 

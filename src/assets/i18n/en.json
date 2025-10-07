@@ -17,7 +17,7 @@
     "ADDRESS": "Address:",
     "ADDRESS_DETAILS": "Office No.6, 6th Floor, Al Rossais Commercial Center – Al Olaya, Riyadh 12211",
     "PHONE": "920013760",
-    "EMAIL": "info@sadeemmedical.com",
+    "EMAIL": "info@medgate-solutions.com",
 
     "HOME": {
       "TITLE": "Home",
@@ -123,7 +123,7 @@
     "TITLE": "Contact",
     "US": "us",
     "DESCRIPTION": "Please fill out the form or contact us directly via:",
-    "EMAIL": "info@sadeemmedical.com",
+    "EMAIL": "info@medgate-solutions.com",
     "PHONE": "920013760",
     "ADDRESS": "Office No.6, 6th Floor, Al Rossais Commercial Center – Al Olaya, Riyadh 12211",
     "IMAGE_ALT": "Contact Us Image",
@@ -143,8 +143,8 @@
       "SENDING": "Sending...",
       "ACCEPT_TERMS": "I accept the terms and conditions",
       "REQUIRED": "This field is required",
-      "CONTACT.FORM.REQUIRED": "This field is required",
-      "CONTACT_FORM_REQUIRED": "This field is required"
+      "CONTACT_FORM_REQUIRED": "This field is required",
+      "INVALID_EMAIL": "Please enter a valid email address"
     }
   },
 
